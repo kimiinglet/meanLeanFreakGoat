@@ -9,7 +9,7 @@ These instructions will help you locate the perfect spot to spend time with your
 ## Running the search engine
 
 Input City/State OR Zip code. 
-Search in a radius of 25, 50, 100, or unlimited miles. (In the 48 contiguous US states!)
+Search in a radius of 25, 50, 100, or unlimited miles. (In the USA).
 Click on search to return results for any location near you, along with a weather forecast.
 
 ## Built With

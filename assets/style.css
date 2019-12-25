@@ -5,7 +5,7 @@ https://bulma.io/alternative-to-bootstrap/
                                     -CL
 */
 body {
-    background-color: #231c19;
+    background: url("images/connectwork-red.jpg");
 }
 
 .has-bg-img { 
@@ -15,6 +15,28 @@ body {
     border-radius: 5px;
 }
 
+/* colors can be altered; I used coolers.io to pick a color scheme. CL */
+
 #contentBox {
     margin: 0 auto;
+}
+
+#welcomeBox {
+    background-color: #FF3366;
+}
+
+#searchBox {
+    background-color: #F6F7F8;
+}
+
+#mapsBox {
+    background-color: #44355B;
+}
+
+#weatherBox {
+    background-color: #ECA72C;
+}
+
+.footer {
+    background: transparent;
 }
