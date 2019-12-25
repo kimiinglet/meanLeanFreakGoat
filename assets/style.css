@@ -4,3 +4,7 @@ https://bulma.io/documentation/
 https://bulma.io/alternative-to-bootstrap/
                                     -CL
 */
+.has-bg-img { 
+    background: url("images/freddie-marriage-w39PTDxKiK8-unsplash.jpg")center center; 
+    background-size:cover; 
+}
