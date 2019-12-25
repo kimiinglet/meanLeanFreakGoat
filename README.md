@@ -1,10 +1,11 @@
-# Project meanLeanFreakGoat's Off Leash Location Finder
+# Project meanLeanFreakGoat's Off Leash Location Finder, AKA Wanderdog!
 
 This application draws from public information to obtain free trails, camp grounds, and parks for your 4-legged pooch! Also provides weather data and distance from your location!
 
 ## Getting Started
 
 These instructions will help you locate the perfect spot to spend time with your pups.
+* [Click Here!](this is where the link should go!!)
 
 ## Running the search engine
 
