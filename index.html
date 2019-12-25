@@ -108,23 +108,41 @@
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <p>Or</p>
+                            </div>
                             <!--Input fields for Zipcode.-->
                             <div class="field">
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-medium is-info" type="text" placeholder="Zipcode">
                                 </div>
                             </div>
-                            <!--Need input field that specifies range/radius of search, whether it is 25, 50, or 100 miles.-->
-                            <div class="field">
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-medium" type="email" placeholder="Normal">
-                                    <span class="icon is-medium is-left">
-                                        <i class="fas fa-envelope"></i>
-                                    </span>
-                                    <span class="icon is-medium is-right">
-                                        <i class="fas fa-check"></i>
-                                    </span>
-                                </div>
+                            <!--Need input field or buttons? that specifies range/radius of search, whether it is 25, 50, or 100 miles.-->
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <button class="button is-link" id="btn25">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-paw"></i>
+                                        </span>
+                                        <span>25 miles</span>
+                                    </button>
+                                </p>
+                                <p class="control">
+                                    <button class="button" id="btn50">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-paw"></i>
+                                        </span>
+                                        <span>50 miles</span>
+                                    </button>
+                                </p>
+                                <p class="control">
+                                    <button class="button is-link" id="btn100">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-paw"></i>
+                                        </span>
+                                        <span>100 miles</span>
+                                    </button>
+                                </p>
                             </div>
                             <!--Submit button to start the on click function in Javascript. CL-->
                             <div class="field is-grouped is-grouped-right">

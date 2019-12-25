@@ -4,6 +4,8 @@ https://bulma.io/documentation/
 https://bulma.io/alternative-to-bootstrap/
                                     -CL
 */
+
+
 body {
     background: url("images/connectwork-red.jpg");
 }
@@ -29,6 +31,22 @@ body {
 }
 
 /* colors can be altered; I used coolers.io to pick a color scheme. CL */
+
+#btn25 {
+    background-color: #FF3366;
+}
+
+#btn50 {
+    background-color: #F6F7F8;
+}
+
+#btn100 {
+    background-color: #44355B;
+}
+
+#btn50:hover {
+    border-color: #ECA72C;
+}
 
 #contentBox {
     margin: 0 auto;

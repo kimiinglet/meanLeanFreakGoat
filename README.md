@@ -19,6 +19,8 @@ Click on search to return results for any location near you, along with a weathe
 * [USA Data](https://www.data.gov/) - We used US Federal govt. open data to pull public land locations.
 * [Bulma](https://bulma.io/documentation/) - We used Bulma CSS framework. 
 * [Unsplash](https://unsplash.com/t/animals) - We used copyright-free images from this site.
+* [FontAwesome](https://fontawesome.com/) - We used the paw and dog icon.
+* [Google Fonts](https://fonts.google.com/) - We used 2 font styles from Google Fonts.
 
 ## Contributing
 
@@ -38,4 +40,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-* Thanks to our dogs, Orion, Nox, and . Thank you for being our best friends.
+* Thanks to our dogs, Orion, Nox, Koda, Kimber, and . Thank you for being our best friends.
