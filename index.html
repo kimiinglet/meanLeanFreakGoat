@@ -26,9 +26,11 @@
             </div>
         </div>
     </section>
+    <!--This is the content box where all the magic happens. CL-->
 
+    <!--This box holds our welcome and information on the page. CL-->
     <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
+        <div class="tile is-vertical is-8" id="contentBox">
             <div class="tile">
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification is-primary">
@@ -36,10 +38,13 @@
                         <p class="subtitle">Let your dog run free.</p>
                         <p>Instructions how to search...</p>
                     </article>
+
+                    <!--This is where the user inputs their criteria. CL-->
                     <article class="tile is-child notification is-warning">
                         <p class="title">Search</p>
                         <div id="searchBox">
                             <div id="searchSpecs">
+                                <!--Input field for City/State-->
                                 <label class="label is-medium">City/State</label>
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-medium" type="email" placeholder="Extra small">
@@ -51,7 +56,7 @@
                                     </span>
                                 </div>
                             </div>
-
+                            <!--Input fields for Zipcode-->
                             <div class="field">
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-medium" type="email" placeholder="Small">
@@ -63,7 +68,7 @@
                                     </span>
                                 </div>
                             </div>
-
+                            <!--Need input field that specifies range/radius of search, whether it is 25, 50, or 100 miles.-->
                             <div class="field">
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-medium" type="email" placeholder="Normal">
@@ -75,12 +80,14 @@
                                     </span>
                                 </div>
                             </div>
+                            <!--Submit button to start the on click function in Javascript. CL-->
                             <div class="field is-grouped is-grouped-right">
                                 <p class="control">
                                     <a class="button is-primary">
                                         Submit
                                     </a>
                                 </p>
+                                <!--The cancel button will clear the input boxes. CL-->
                                 <p class="control">
                                     <a class="button is-light">
                                         Cancel
@@ -92,7 +99,7 @@
                 </div>
                 <div class="tile is-parent">
                     <article class="tile is-child notification is-info">
-                        <p class="title">Middle tile</p>
+                        <p class="title">Google Maps</p>
                         <p class="subtitle">With an image</p>
                         <figure class="image is-4by3">
                             <img src="https://bulma.io/images/placeholders/640x480.png">
@@ -109,20 +116,9 @@
                     </div>
                 </article>
             </div>
-        </div>
-        <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
-                <div class="content">
-                    <p class="title">Google Maps?</p>
-                    <p class="subtitle">With even more content</p>
-                    <div class="content">
-                        <!-- Content -->
-                    </div>
-                </div>
-            </article>
+
         </div>
     </div>
-
 </body>
 
 

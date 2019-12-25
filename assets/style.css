@@ -4,7 +4,17 @@ https://bulma.io/documentation/
 https://bulma.io/alternative-to-bootstrap/
                                     -CL
 */
+body {
+    background-color: #231c19;
+}
+
 .has-bg-img { 
     background: url("images/freddie-marriage-w39PTDxKiK8-unsplash.jpg")center center; 
     background-size:cover; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#contentBox {
+    margin: 0 auto;
 }
