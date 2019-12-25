@@ -8,6 +8,19 @@ body {
     background: url("images/connectwork-red.jpg");
 }
 
+#wanderDogTitle {
+    font-family: 'Baskervville', serif;
+    font-size: 72px;
+}
+
+#wanderDogSlogan p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    padding-left: 10%;
+}
+
 .has-bg-img { 
     background: url("images/freddie-marriage-w39PTDxKiK8-unsplash.jpg")center center; 
     background-size:cover; 
