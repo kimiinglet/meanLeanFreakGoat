@@ -50,7 +50,7 @@
                                 <!--Input field for State-->
                                 <label class="label is-medium">State</label>
                                 <div class="control">
-                                    <div class="select">
+                                    <div class="select" id="statesDropdown">
                                         <select>
                                             <!--There has to be a better way to select state...Maybe show the ones that have public land? CL-->
                                             <option>Select dropdown</option>
@@ -146,13 +146,13 @@
                             </div>
                             <!--Submit button to start the on click function in Javascript. CL-->
                             <div class="field is-grouped is-grouped-right">
-                                <p class="control">
+                                <p class="control" id="submitBtn">
                                     <a class="button is-primary">
                                         Submit
                                     </a>
                                 </p>
                                 <!--The cancel button will clear the input boxes. CL-->
-                                <p class="control">
+                                <p class="control" id="cancelBtn">
                                     <a class="button is-light">
                                         Cancel
                                     </a>
@@ -164,9 +164,9 @@
                 <div class="tile is-parent">
                     <article class="tile is-child notification is-info" id="mapsBox">
                         <p class="title">Google Maps</p>
-                        <p class="subtitle">With an image</p>
-                        <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/640x480.png">
+                        <!--Image is placeholder for maps API-->
+                        <figure class="image is-fullwidth">
+                            <img src="assets/images/colin-maclean-K8kTsPX-GRI-unsplash.jpg">
                         </figure>
                     </article>
                 </div>
