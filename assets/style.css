@@ -30,6 +30,10 @@ body {
     border-radius: 5px;
 }
 
+#cityInput {
+    margin-bottom: 5px;
+}
+
 /* colors can be altered; I used coolers.io to pick a color scheme. CL */
 
 #btn25 {
@@ -70,6 +74,14 @@ body {
 
 .footer {
     background: transparent;
+}
+
+#footerTxt {
+    color: #F6F7F8;
+}
+
+a {
+    color: #ECA72C;
 }
 
 @media screen and (max-width: 768px) {

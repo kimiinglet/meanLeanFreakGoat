@@ -20,11 +20,26 @@ $(document).ready(function () {
 
     //when you click on submit, we will take note of city/state || zip, and radius.
     submitButton.click(function () {
-        //pull data from govt API.
+        //pull data Google Maps.
 
-        //using govt API, pull data from Google Maps. 
 
-        //using Google Maps API, pull weather data.
+
+
+        //using use the location from Google maps (radius) to find any public land from the Govt API. 
+
+
+
+
+        //using user input City/State or Zip, pull weather data.
+
+        /*
+        https://openweathermap.org/forecast5 use this for 5 day forecast 
+        for city/state : api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
+        example: api.openweathermap.org/data/2.5/forecast?q=Austin,us&mode=xml
+
+        for zip : api.openweathermap.org/data/2.5/forecast?zip={zip code},{country code}
+        example: api.openweathermap.org/data/2.5/forecast?zip=94040,us
+        */
 
 
         //display results in correct divs.
