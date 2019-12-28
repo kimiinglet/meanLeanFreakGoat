@@ -13,6 +13,7 @@ $(document).ready(function () {
     var cancelButton = $("#cancelBtn");
     var zipcodeInput = $("#zipcodeInput");
     var usState = $("#statesDropdown");
+    var usCity = $("#cityInput");
 
     //when the page loads, everything is clear/empty.
 

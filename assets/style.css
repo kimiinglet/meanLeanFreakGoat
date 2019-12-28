@@ -12,7 +12,7 @@ body {
 
 #wanderDogTitle {
     font-family: 'Baskervville', serif;
-    font-size: 72px;
+    font-size: 5rem;
 }
 
 #wanderDogSlogan p {
@@ -71,3 +71,21 @@ body {
 .footer {
     background: transparent;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    body {
+      text-align: center;
+    }
+    #wanderDogTitle {
+        font-size: 2rem;
+    }
+    .field.is-grouped {
+        flex-wrap: wrap;
+    }
+  }
