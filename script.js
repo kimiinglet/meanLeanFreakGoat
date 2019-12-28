@@ -15,25 +15,36 @@ $(document).ready(function () {
     var usState = $("#statesDropdown");
     var usCity = $("#cityInput");
     var mapBox = $("#map");
+    var weatherBox = $(".weatherContent");
 
-    //when page loads, maps should be default US?
+    //when page loads, maps should be default Austin, TX? THIS DOESN'T WORK YET.
     //https://developers.google.com/maps/documentation/javascript/tutorial
-    function initMap() {
-        mapBox = new google.maps.Map(mapBox), {
-            center: { lat: -34.397, lng: 150.644 },
-            zoom: 5
-        };
-    };
 
+
+    //when page loads, weather should be default, Austin, TX.
+    var queryWeather = "https://api.openweathermap.org/data/2.5/forecast?q=Austin,us&units=imperial&appid=" + WeatherKey;
+    // We then create an AJAX call for Austin.
+    $.ajax({
+        url: queryWeather,
+        method: "GET"
+    }).then(function (response) {
+        // Create CODE HERE to Log the queryURL
+        console.log(queryWeather);
+        // Create CODE HERE to log the resulting object
+        console.log(response);
+        //logging to see if query works.
+        var cityEl = response.city.name;
+        console.log(cityEl);
+        var tempEl = response.list;
+        console.log(tempEl);
+    });
 
     //when the page loads, user input is clear/empty.
 
 
-    //when you click on submit, we will take note of city/state || zip, and radius.
+    //when you click on submit, we will take note of city/state || zip, and radius. THIS DOESN'T WORK YET
     submitButton.click(function () {
         //pull data Google Maps.
-
-        var queryMap = "https://maps.googleapis.com/maps/api/js?key=" + config.myGKey + "&callback=initMap";
 
 
 
@@ -51,18 +62,18 @@ $(document).ready(function () {
 
         /*
         https://openweathermap.org/forecast5 use this for 5 day forecast 
-        for city/state : api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
-        example: api.openweathermap.org/data/2.5/forecast?q=Austin,us&mode=xml
+        for city/state : https://api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
+        example: https://api.openweathermap.org/data/2.5/forecast?q=Austin,us&units=imperial
     
-        for zip : api.openweathermap.org/data/2.5/forecast?zip={zip code},{country code}
-        example: api.openweathermap.org/data/2.5/forecast?zip=94040,us
+        for zip : https://api.openweathermap.org/data/2.5/forecast?zip={zip code},{country code}
+        example: https://api.openweathermap.org/data/2.5/forecast?zip=94040,us
         */
 
 
         //display results in correct divs.
 
 
-        //when cancel is clicked, the page resets.
+        //when cancel is clicked, the page resets. DOES NOT WORK!!!
         cancelButton.on("click", function () {
             $('select option:contains("Select Dropdown")').prop('selected', true);
             zipcodeInput.val("");
