@@ -68,6 +68,10 @@ body {
     background-color: #44355B;
 }
 
+#map {
+    height: 100%;
+}
+
 #weatherBox {
     background-color: #ECA72C;
 }
