@@ -17,6 +17,16 @@ $(document).ready(function () {
     var mapBox = $("#map");
     var weatherBox = $(".weatherContent");
 
+    //I just wanted to fade the header for fun. --CL
+    $(window).on('scroll', function () {
+        var header = $(".hero");
+        if ($(this).scrollTop() > 50) {
+            if (!header.data('faded')) header.data('faded', 1).stop(true).fadeTo(400, 0.2);
+        } else if (header.data('faded')) {
+            header.data('faded', 0).stop(true).fadeTo(400, 1);
+        }
+    });
+
     //when page loads, maps should be default Austin, TX? THIS DOESN'T WORK YET.
     //https://developers.google.com/maps/documentation/javascript/tutorial
 
