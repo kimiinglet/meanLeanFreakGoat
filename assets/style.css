@@ -68,12 +68,18 @@ body {
     background-color: #44355B;
 }
 
+/* somebody fix this box!!! it keeps getting out of its parent container and I can't stop it! */
 #map {
+    border: #F6F7F8 solid 1px;
     height: 100%;
 }
 
 #weatherBox {
     background-color: #ECA72C;
+}
+
+#currentCityWeather {
+    border-right: #44355B dashed 1px;
 }
 
 .footer {

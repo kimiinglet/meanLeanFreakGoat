@@ -120,7 +120,8 @@
                             <!--Input fields for Zipcode.-->
                             <div class="field">
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-normal" id="zipcodeInput" type="text" placeholder="Zipcode">
+                                    <input class="input is-normal" id="zipcodeInput" maxlength="5" type="text"
+                                        placeholder="Zipcode">
                                 </div>
                             </div>
                             <!--Need input field or buttons? that specifies range/radius of search, whether it is 25, 50, or 100 miles.-->
@@ -172,7 +173,7 @@
                         <p class="title">Google Maps</p>
                         <!--Image is placeholder for maps API-->
                         <div id="map" class="is-full-width">
-
+                            Placeholder until we can default it to Austin, TX
                         </div>
                     </article>
                 </div>
@@ -180,19 +181,25 @@
             <div class="tile is-parent">
                 <article class="tile is-child notification is-danger" id="weatherBox">
                     <p class="title">Weather Forecast</p>
-                    <p class="subtitle">Aligned with the right tile</p>
-                    <div class="weatherContent">
+                    <div class="columns">
                         <!-- Content -->
+                        <div class="column" id="currentCityWeather">Current weather</div>
+                        <div class="column" id="day1Forecast">Day 1 weather</div>
+                        <div class="column" id="day2Forecast">Day 2 weather</div>
+                        <div class="column" id="day3Forecast">Day 3 weather</div>
+                        <div class="column" id="day4Forecast">Day 4 weather</div>
+                        <div class="column" id="day5Forecast">Day 5 weather</div>
                     </div>
                 </article>
             </div>
         </div>
     </div>
+
     <footer class="footer">
         <div class="content has-text-centered">
             <p id="footerTxt">
                 Wanderdog by <a href="https://github.com/kimiinglet/meanLeanFreakGoat">Crystal Ly, Kimi
-                    Inglet, and Justin Wofford</a>. Copyright 2020
+                    Inglet, and Justin Wofford</a>. Copyright &copy; 2020
             </p>
         </div>
     </footer>
