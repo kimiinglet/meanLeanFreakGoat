@@ -10,7 +10,7 @@ var WeatherKey = config.myWKey;
 $(document).ready(function () {
     //add var names here
     var submitButton = $("#submitBtn");
-    var cancelButton = $("#cancelBtn");
+    var clearButton = $("#clearBtn");
     var zipcodeInput = $("#zipcodeInput");
     var usState = $("#statesDropdown");
     var usCity = $("#cityInput");
@@ -45,6 +45,7 @@ $(document).ready(function () {
         //logging to see if query works.
         var cityEl = response.city.name;
         console.log(cityEl);
+        $("#cityForecast").append(cityEl);
         var tempEl = response.list;
         console.log(tempEl);
     });
@@ -83,8 +84,8 @@ $(document).ready(function () {
         //display results in correct divs.
 
 
-        //when cancel is clicked, the page resets. DOES NOT WORK!!!
-        cancelButton.on("click", function () {
+        //when clear is clicked, the page resets. DOES NOT WORK!!!
+        clearButton.on("click", function () {
             $('select option:contains("Select Dropdown")').prop('selected', true);
             zipcodeInput.val("");
         });

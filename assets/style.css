@@ -94,6 +94,14 @@ a {
     color: #ECA72C;
 }
 
+.weatherTemp {
+    font-family: 'Baskervville', serif;
+}
+
+.weatherCondition {
+    font-family: 'Montserrat', sans-serif;
+}
+
 @media screen and (max-width: 768px) {
     body {
       text-align: left;

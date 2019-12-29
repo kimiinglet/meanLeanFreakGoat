@@ -158,10 +158,10 @@
                                         Submit
                                     </a>
                                 </p>
-                                <!--The cancel button will clear the input boxes. CL-->
-                                <p class="control" id="cancelBtn">
+                                <!--The clear button will clear the input boxes. CL-->
+                                <p class="control" id="clearBtn">
                                     <a class="button is-light">
-                                        Cancel
+                                        Clear
                                     </a>
                                 </p>
                             </div>
@@ -180,27 +180,66 @@
             </div>
             <div class="tile is-parent">
                 <article class="tile is-child notification is-danger" id="weatherBox">
-                    <p class="title">Weather Forecast</p>
+                    <!--We can dynamically append the city name here.-->
+                    <p class="title" id="cityForecast">Weather Forecast: </p>
                     <div class="columns">
                         <!-- Content -->
                         <div class="column" id="currentCityWeather">
-                            <img src="assets/images/weather-icons/storm.png">
-                            Current weather</div>
+                            <figure class="image is-1by1">
+                                <img src="assets/images/weather-icons/storm.png"></figure>
+                            <h1 class="weatherTemp has-text-centered is-size-2" id="currentTemp">
+                                <!--Prepend temperature here!-->
+                                &deg;F</h1>
+                            <h3 class="weatherCondition has-text-centered is-size-5" id="currentCondition">
+                                <!--Replace text with string that tells you conditions, like, windy, clear, sunny, stormy-->
+                                Current weather
+                            </h3>
+                        </div>
                         <div class="column" id="day1Forecast">
-                            <img src="assets/images/weather-icons/sunny.png">
-                            Day 1 weather</div>
+                            <figure class="image is-1by1">
+                                <img src="assets/images/weather-icons/sunny.png"></figure>
+                            <h1 class="weatherTemp has-text-centered is-size-2" id="day1Temp">
+                                &deg;F</h1>
+                            <h3 class="weatherCondition has-text-centered is-size-5" id="day1Condition">
+                                Day 1 weather
+                            </h3>
+                        </div>
                         <div class="column" id="day2Forecast">
-                            <img src="assets/images/weather-icons/hail.png">
-                            Day 2 weather</div>
+                            <figure class="image is-1by1">
+                                <img src="assets/images/weather-icons/hail.png"></figure>
+                            <h1 class="weatherTemp has-text-centered is-size-2" id="day2Temp">
+                                &deg;F</h1>
+                            <h3 class="weatherCondition has-text-centered is-size-5" id="day2Condition">
+                                Day 2 weather
+                            </h3>
+                        </div>
                         <div class="column" id="day3Forecast">
-                            <img src="assets/images/weather-icons/cloudy-night.png">
-                            Day 3 weather</div>
+                            <figure class="image is-1by1">
+                                <img src="assets/images/weather-icons/cloudy-night.png"></figure>
+                            <h1 class="weatherTemp has-text-centered is-size-2" id="day3Temp">
+                                &deg;F</h1>
+                            <h3 class="weatherCondition has-text-centered is-size-5" id="day3Condition">
+                                Day 3 weather
+                            </h3>
+                        </div>
                         <div class="column" id="day4Forecast">
-                            <img src="assets/images/weather-icons/thunderstorm.png">
-                            Day 4 weather</div>
+                            <figure class="image is-1by1">
+                                <img src="assets/images/weather-icons/thunderstorm.png"></figure>
+                            <h1 class="weatherTemp has-text-centered is-size-2" id="day4Temp">
+                                &deg;F</h1>
+                            <h3 class="weatherCondition has-text-centered is-size-5" id="day4Condition">
+                                Day 4 weather
+                            </h3>
+                        </div>
                         <div class="column" id="day5Forecast">
-                            <img src="assets/images/weather-icons/partly-cloudy.png">
-                            Day 5 weather</div>
+                            <figure class="image is-1by1">
+                                <img src="assets/images/weather-icons/partly-cloudy.png"></figure>
+                            <h1 class="weatherTemp has-text-centered is-size-2" id="day5Temp">
+                                &deg;F</h1>
+                            <h3 class="weatherCondition has-text-centered is-size-5" id="day5Condition">
+                                Day 5 weather
+                            </h3>
+                        </div>
                     </div>
                 </article>
             </div>
