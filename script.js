@@ -1,7 +1,7 @@
 //api keys for maps, weather, gov data, etc. are in the config.js. This is for security reasons so API keys don't get stolen.
 //WHEN YOU ADD AN API KEY, ADD IT TO CONFIG.JS. 
 
-var Gkey = config.myGKey;
+//var Gkey = config.myGKey;
 
 var WeatherKey = config.myWKey;
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
     });
 
-    //when page loads, maps should be default Austin, TX? THIS DOESN'T WORK YET.
+    //when page loads, maps should be default Austin, TX, 50 mile range. THIS DOESN'T WORK YET.
     //https://developers.google.com/maps/documentation/javascript/tutorial
 
 
