@@ -13,7 +13,7 @@ $(document).ready(function () {
     //add var names here
     var submitButton = $("#submitBtn");
     var clearButton = $("#clearBtn");
-    var zipcodeInput = $("#zipcodeInput").val;
+    var zipcodeInput = $("#zipcodeInput");
     var usState = $("#statesDropdown");
     var usCity = $("#cityInput");
     var mapBox = $("#map");
@@ -40,18 +40,18 @@ $(document).ready(function () {
         url: currentWeather,
         method: "GET"
     }).then(function (response) {
-        // Create CODE HERE to Log the queryURL
+        //Log the queryURL
         console.log(currentWeather);
-        // Create CODE HERE to log the resulting object
+        //Log the resulting object
         console.log(response);
         //logging to see if query works.
         var cityEl = response.name;
         console.log(cityEl);
-        $("#cityForecast").append(cityEl);
+        $("#cityForecast").html(cityEl);
         //This is for current weather!
         var currentTempEl = response.main.temp;
         console.log(currentTempEl);
-        $("#currentTemp").prepend(currentTempEl);
+        $("#currentTemp").html(currentTempEl);
         //current weather conditions
         var currentConditionEl = response.weather[0].description;
         $("#currentCondition").text(currentConditionEl);
@@ -68,37 +68,34 @@ $(document).ready(function () {
         url: queryWeather,
         method: "GET"
     }).then(function (response) {
-        // Create CODE HERE to Log the queryURL
+        //Log the queryURL
         console.log(queryWeather);
-        // Create CODE HERE to log the resulting object
+
         console.log(response);
-        //logging to see if query works.
-        var cityEl = response.city.name;
-        console.log(cityEl);
         //THESE ARE FOR THE FORECAST!
         var tempEl1 = response.list[0].main.temp;
         console.log(tempEl1);
-        $("#day1Temp").prepend(tempEl1);
+        $("#day1Temp").html(tempEl1);
         var day1ConditionEl = response.list[0].weather[0].description;
         $("#day1Condition").text(day1ConditionEl);
 
         var tempEl2 = response.list[8].main.temp;
-        $("#day2Temp").prepend(tempEl2);
+        $("#day2Temp").html(tempEl2);
         var day2ConditionEl = response.list[8].weather[0].description;
         $("#day2Condition").text(day2ConditionEl);
 
         var tempEl3 = response.list[17].main.temp;
-        $("#day3Temp").prepend(tempEl3);
+        $("#day3Temp").html(tempEl3);
         var day3ConditionEl = response.list[17].weather[0].description;
         $("#day3Condition").text(day3ConditionEl);
 
         var tempEl4 = response.list[26].main.temp;
-        $("#day4Temp").prepend(tempEl4);
+        $("#day4Temp").html(tempEl4);
         var day4ConditionEl = response.list[26].weather[0].description;
         $("#day4Condition").text(day4ConditionEl);
 
         var tempEl5 = response.list[35].main.temp;
-        $("#day5Temp").prepend(tempEl5);
+        $("#day5Temp").html(tempEl5);
         var day5ConditionEl = response.list[35].weather[0].description;
         $("#day5Condition").text(day5ConditionEl);
     });
@@ -119,20 +116,59 @@ $(document).ready(function () {
     
         */
 
-
-
-        //using user input City/State or Zip, pull weather data.
-        var userInputWeatherquery = "https://api.openweathermap.org/data/2.5/forecast?zip=" + zipcodeInput + ",us&units=imperial&appid=" + weatherKey;
+        var userCurrentWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + (usCity[0].value || zipcodeInput[0].value) + ",us&units=imperial&appid=" + weatherKey;
 
         $.ajax({
-            url: userInputWeatherquery,
+            url: userCurrentWeather,
             method: "GET"
         }).then(function (response) {
-            // Create CODE HERE to Log the queryURL
-            console.log(userInputWeatherquery);
-            // Create CODE HERE to log the resulting object
-            console.log(response);
-            console.log(zipcodeInput);
+            var cityEl = response.name;
+            $("#cityForecast").html(cityEl);
+            //This is for current weather!
+            var currentTempEl = response.main.temp;
+            $("#currentTemp").html(currentTempEl);
+
+            var currentConditionEl = response.weather[0].description;
+            $("#currentCondition").text(currentConditionEl);
+        });
+
+        //using user input City/State or Zip, pull weather data.
+        var userInputForecastQuery = "https://api.openweathermap.org/data/2.5/forecast?zip=" + (usCity[0].value || zipcodeInput[0].value) + ",us&units=imperial&appid=" + weatherKey;
+
+        console.log(zipcodeInput[0].value);
+
+        $.ajax({
+            url: userInputForecastQuery,
+            method: "GET"
+        }).then(function (response) {
+            //THESE ARE FOR THE FORECAST!
+            var tempEl1 = response.list[0].main.temp;
+            console.log(tempEl1);
+            $("#day1Temp").html(tempEl1);
+            var day1ConditionEl = response.list[0].weather[0].description;
+            $("#day1Condition").text(day1ConditionEl);
+
+            var tempEl2 = response.list[8].main.temp;
+            $("#day2Temp").html(tempEl2);
+            var day2ConditionEl = response.list[8].weather[0].description;
+            $("#day2Condition").text(day2ConditionEl);
+
+            var tempEl3 = response.list[17].main.temp;
+            $("#day3Temp").html(tempEl3);
+            var day3ConditionEl = response.list[17].weather[0].description;
+            $("#day3Condition").text(day3ConditionEl);
+
+            var tempEl4 = response.list[26].main.temp;
+            $("#day4Temp").html(tempEl4);
+            var day4ConditionEl = response.list[26].weather[0].description;
+            $("#day4Condition").text(day4ConditionEl);
+
+            var tempEl5 = response.list[35].main.temp;
+            $("#day5Temp").html(tempEl5);
+            var day5ConditionEl = response.list[35].weather[0].description;
+            $("#day5Condition").text(day5ConditionEl);
+
+
         });
         /*
         https://openweathermap.org/forecast5 use this for 5 day forecast 
