@@ -7,7 +7,7 @@ var gKey = config.myGKey;
 //this key will work on local and website.
 var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 
-//when you create the queryURLs, you use var Gkey or var WeatherKey to replace where the API key is.
+//when you create the queryURLs, you use var Gkey or var weatherKey to replace where the API key is.
 
 $(document).ready(function () {
     //add var names here
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 
     //when page loads, weather should be default, Austin, TX. This is for current weather! 
-    var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q=Austin,us&units=imperial&appid=" + WeatherKey;
+    var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q=Austin,us&units=imperial&appid=" + weatherKey;
     //We then create an AJAX call for Austin.
     $.ajax({
         url: currentWeather,
@@ -122,7 +122,7 @@ $(document).ready(function () {
 
 
         //using user input City/State or Zip, pull weather data.
-        var userInputWeatherquery = "https://api.openweathermap.org/data/2.5/forecast?zip=" + zipcodeInput + ",us&units=imperial&appid=" + WeatherKey;
+        var userInputWeatherquery = "https://api.openweathermap.org/data/2.5/forecast?zip=" + zipcodeInput + ",us&units=imperial&appid=" + weatherKey;
 
         $.ajax({
             url: userInputWeatherquery,
