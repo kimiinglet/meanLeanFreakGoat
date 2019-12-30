@@ -17,7 +17,6 @@ $(document).ready(function () {
     var usState = $("#statesDropdown");
     var usCity = $("#cityInput");
     var mapBox = $("#map");
-    var weatherBox = $(".weatherContent");
 
     //I just wanted to fade the header for fun. --CL
     $(window).on('scroll', function () {
@@ -133,9 +132,7 @@ $(document).ready(function () {
         });
 
         //using user input City/State or Zip, pull weather data.
-        var userInputForecastQuery = "https://api.openweathermap.org/data/2.5/forecast?zip=" + (usCity[0].value || zipcodeInput[0].value) + ",us&units=imperial&appid=" + weatherKey;
-
-        console.log(zipcodeInput[0].value);
+        var userInputForecastQuery = "https://api.openweathermap.org/data/2.5/forecast?q=" + (usCity[0].value || zipcodeInput[0].value) + ",us&units=imperial&appid=" + weatherKey;
 
         $.ajax({
             url: userInputForecastQuery,
@@ -170,20 +167,12 @@ $(document).ready(function () {
 
 
         });
-        /*
-        https://openweathermap.org/forecast5 use this for 5 day forecast 
-        for city/state : https://api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
-        example: https://api.openweathermap.org/data/2.5/forecast?q=Austin,us&units=imperial
-        */
 
 
-        //display results in correct divs.
-
-
-        //when clear is clicked, the page resets. DOES NOT WORK!!!
         clearButton.on("click", function () {
             $('select option:contains("Select Dropdown")').prop('selected', true);
-            zipcodeInput.val("");
+            usCity[0].value = "";
+            zipcodeInput[0].value = "";
         });
     });
 
