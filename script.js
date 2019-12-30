@@ -1,10 +1,11 @@
 //api keys for maps, weather, gov data, etc. are in the config.js. This is for security reasons so API keys don't get stolen.. 
+var mapsKey = "AIzaSyCY_qAq37SMtQG_l9NvDHiXLr5A5FlhlZ0";
 
 //this key will only work on local machines. Must have another variable with a Maps API key that is in this script.
-var Gkey = config.myGKey;
+var gKey = config.myGKey;
 
 //this key will work on local and website.
-var WeatherKey = 'd9370cf81c44dc3900380fcc44da127d';
+var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 
 //when you create the queryURLs, you use var Gkey or var WeatherKey to replace where the API key is.
 
@@ -61,7 +62,7 @@ $(document).ready(function () {
     });
 
     // This is for forecast weather!
-    var queryWeather = "https://api.openweathermap.org/data/2.5/forecast?q=Austin,us&units=imperial&appid=" + WeatherKey;
+    var queryWeather = "https://api.openweathermap.org/data/2.5/forecast?q=Austin,us&units=imperial&appid=" + weatherKey;
 
     $.ajax({
         url: queryWeather,
