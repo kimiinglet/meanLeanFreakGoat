@@ -12,7 +12,7 @@ $(document).ready(function () {
     //add var names here
     var submitButton = $("#submitBtn");
     var clearButton = $("#clearBtn");
-    var zipcodeInput = $("#zipcodeInput");
+    var zipcodeInput = $("#zipcodeInput").val;
     var usState = $("#statesDropdown");
     var usCity = $("#cityInput");
     var mapBox = $("#map");
@@ -51,8 +51,13 @@ $(document).ready(function () {
         var currentTempEl = response.main.temp;
         console.log(currentTempEl);
         $("#currentTemp").prepend(currentTempEl);
+        //current weather conditions
         var currentConditionEl = response.weather[0].description;
         $("#currentCondition").text(currentConditionEl);
+        //current weather icon **DOES NOT WORK
+        var iconCode = response.weather[0].icon;
+        var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
+        $("#currentIcon").html("<img src=" + iconUrl + ">");
     });
 
     // This is for forecast weather!
@@ -116,14 +121,22 @@ $(document).ready(function () {
 
 
         //using user input City/State or Zip, pull weather data.
+        var userInputWeatherquery = "https://api.openweathermap.org/data/2.5/forecast?zip=" + zipcodeInput + ",us&units=imperial&appid=" + WeatherKey;
 
+        $.ajax({
+            url: userInputWeatherquery,
+            method: "GET"
+        }).then(function (response) {
+            // Create CODE HERE to Log the queryURL
+            console.log(userInputWeatherquery);
+            // Create CODE HERE to log the resulting object
+            console.log(response);
+            console.log(zipcodeInput);
+        });
         /*
         https://openweathermap.org/forecast5 use this for 5 day forecast 
         for city/state : https://api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
         example: https://api.openweathermap.org/data/2.5/forecast?q=Austin,us&units=imperial
-    
-        for zip : https://api.openweathermap.org/data/2.5/forecast?zip={zip code},{country code}
-        example: https://api.openweathermap.org/data/2.5/forecast?zip=94040,us
         */
 
 
