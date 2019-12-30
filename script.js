@@ -30,9 +30,22 @@ $(document).ready(function () {
 
     //when page loads, maps should be default Austin, TX, 50 mile range. THIS DOESN'T WORK YET.
     //https://developers.google.com/maps/documentation/javascript/tutorial
+    document.addEventListener('DOMContentLoaded', function () {
+        var js_file = document.createElement('script');
+        js_file.type = 'text/javascript';
+        js_file.src = "https://maps.googleapis.com/maps/api/js?key=" + gKey + "&callback=initMap";
+        mapBox.html(js_file);
 
+        function initMap() {
+            mapBox = new google.maps.Map(mapBox), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            };
+        }
+    });
 
     //when page loads, weather should be default, Austin, TX. This is for current weather! 
+
     var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q=Austin,us&units=imperial&appid=" + weatherKey;
     //We then create an AJAX call for Austin.
     $.ajax({
@@ -98,6 +111,7 @@ $(document).ready(function () {
         var day5ConditionEl = response.list[35].weather[0].description;
         $("#day5Condition").text(day5ConditionEl);
     });
+
     //when the page loads, user input is clear/empty.
 
 
@@ -112,7 +126,7 @@ $(document).ready(function () {
         /* 
         https://catalog.data.gov/dataset/usgs-national-boundary-dataset-nbd-downloadable-data-collectionbc141
         https://catalog.data.gov/dataset/trail-line-and-point-features-u-s-fish-and-wildlife-service
-    
+     
         */
 
         var userCurrentWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + (usCity[0].value || zipcodeInput[0].value) + ",us&units=imperial&appid=" + weatherKey;
