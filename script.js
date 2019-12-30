@@ -1,9 +1,10 @@
-//api keys for maps, weather, gov data, etc. are in the config.js. This is for security reasons so API keys don't get stolen.
-//WHEN YOU ADD AN API KEY, ADD IT TO CONFIG.JS. 
+//api keys for maps, weather, gov data, etc. are in the config.js. This is for security reasons so API keys don't get stolen.. 
 
+//this key will only work on local machines. Must have another variable with a Maps API key that is in this script.
 var Gkey = config.myGKey;
 
-var WeatherKey = config.myWKey;
+//this key will work on local and website.
+var WeatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 
 //when you create the queryURLs, you use var Gkey or var WeatherKey to replace where the API key is.
 
@@ -31,9 +32,32 @@ $(document).ready(function () {
     //https://developers.google.com/maps/documentation/javascript/tutorial
 
 
-    //when page loads, weather should be default, Austin, TX.
+    //when page loads, weather should be default, Austin, TX. This is for current weather! 
+    var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q=Austin,us&units=imperial&appid=" + WeatherKey;
+    //We then create an AJAX call for Austin.
+    $.ajax({
+        url: currentWeather,
+        method: "GET"
+    }).then(function (response) {
+        // Create CODE HERE to Log the queryURL
+        console.log(currentWeather);
+        // Create CODE HERE to log the resulting object
+        console.log(response);
+        //logging to see if query works.
+        var cityEl = response.name;
+        console.log(cityEl);
+        $("#cityForecast").append(cityEl);
+        //This is for current weather!
+        var currentTempEl = response.main.temp;
+        console.log(currentTempEl);
+        $("#currentTemp").prepend(currentTempEl);
+        var currentConditionEl = response.weather[0].description;
+        $("#currentCondition").text(currentConditionEl);
+    });
+
+    // This is for forecast weather!
     var queryWeather = "https://api.openweathermap.org/data/2.5/forecast?q=Austin,us&units=imperial&appid=" + WeatherKey;
-    // We then create an AJAX call for Austin.
+
     $.ajax({
         url: queryWeather,
         method: "GET"
@@ -45,11 +69,33 @@ $(document).ready(function () {
         //logging to see if query works.
         var cityEl = response.city.name;
         console.log(cityEl);
-        $("#cityForecast").append(cityEl);
-        var tempEl = response.list;
-        console.log(tempEl);
-    });
+        //THESE ARE FOR THE FORECAST!
+        var tempEl1 = response.list[0].main.temp;
+        console.log(tempEl1);
+        $("#day1Temp").prepend(tempEl1);
+        var day1ConditionEl = response.list[0].weather[0].description;
+        $("#day1Condition").text(day1ConditionEl);
 
+        var tempEl2 = response.list[8].main.temp;
+        $("#day2Temp").prepend(tempEl2);
+        var day2ConditionEl = response.list[8].weather[0].description;
+        $("#day2Condition").text(day2ConditionEl);
+
+        var tempEl3 = response.list[17].main.temp;
+        $("#day3Temp").prepend(tempEl3);
+        var day3ConditionEl = response.list[17].weather[0].description;
+        $("#day3Condition").text(day3ConditionEl);
+
+        var tempEl4 = response.list[26].main.temp;
+        $("#day4Temp").prepend(tempEl4);
+        var day4ConditionEl = response.list[26].weather[0].description;
+        $("#day4Condition").text(day4ConditionEl);
+
+        var tempEl5 = response.list[35].main.temp;
+        $("#day5Temp").prepend(tempEl5);
+        var day5ConditionEl = response.list[35].weather[0].description;
+        $("#day5Condition").text(day5ConditionEl);
+    });
     //when the page loads, user input is clear/empty.
 
 
