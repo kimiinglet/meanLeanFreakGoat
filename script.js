@@ -2,7 +2,14 @@
 var mapsKey = "AIzaSyCY_qAq37SMtQG_l9NvDHiXLr5A5FlhlZ0";
 
 //this key will only work on local machines. Must have another variable with a Maps API key that is in this script.
-var gKey = config.myGKey;
+
+var gKey = "";
+
+try {
+    gKey = config.myGKey;
+} catch (error) {
+    // no operation; keeps going
+}
 
 //this key will work on local and website.
 var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
