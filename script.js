@@ -75,9 +75,10 @@ $(document).ready(function () {
         var currentConditionEl = response.weather[0].description;
         $("#currentCondition").text(currentConditionEl);
         //current weather icon from API SO UGLY
-        var iconCode = response.weather[0].icon;
-        var iconUrl = "https://openweathermap.org/img/wn/" + iconCode + ".png";
-        $("#currentIcon").attr('src', iconUrl);
+        var iconCode = response.weather[0].id;
+        var flowersIcon = "wi-owm-" + iconCode;
+        console.log(flowersIcon);
+        $("#currentIcon").attr('class', flowersIcon);
     });
 
     // This is for forecast weather!
