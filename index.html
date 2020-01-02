@@ -12,6 +12,27 @@
     <!--doggy favicon!-->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Baskervville|Montserrat&display=swap" rel="stylesheet">
+
+
+
+
+
+    <style>
+        #alert {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #ddd;
+            color: #333;
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+
+    <script src="assets/map/raphael.js"></script>
+    <script src="assets/map/color.jquery.js"></script>
+    <script src="assets/map/jquery.usmap.js"></script>
+
+    </script>
 </head>
 
 <!--When adding images from Unsplash, you can embed a credit badge into the HTML to credit the photographer. -->
@@ -172,7 +193,10 @@
                     <article class="tile is-child notification is-info" id="mapsBox">
                         <p class="title">Google Maps</p>
                         <!--Image is placeholder for maps API-->
-                        <div id="map" class="is-full-width">
+                        <div class="is-full-width">
+
+                            <div id="map" style="width: 930px; height: 630px; border: solid 3px red;"></div>
+
                         </div>
                     </article>
                 </div>

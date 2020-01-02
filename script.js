@@ -198,3 +198,9 @@ $(document).ready(function () {
     });
 
 });
+
+
+//US Map
+$(document).ready(function () {
+    $('#map').usmap({});
+});
