@@ -10,6 +10,10 @@ body {
     background: url("images/connectwork-red.jpg");
 }
 
+i {
+    height: 400%;
+}
+
 #wanderDogTitle {
     font-family: 'Baskervville', serif;
     font-size: 5rem;
