@@ -75,8 +75,9 @@ $(document).ready(function () {
         var currentConditionEl = response.weather[0].description;
         $("#currentCondition").text(currentConditionEl);
         //current weather icon **DOES NOT WORK
-        var iconCode = response.weather[0].icon;
-        var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconCode = response.weather[0].icon.value;
+        console.log = iconCode;
+        var iconUrl = "https://openweathermap.org/img/wn/" + iconCode + ".png";
         $("#currentIcon").html("<img src=" + iconUrl + ">");
     });
 
