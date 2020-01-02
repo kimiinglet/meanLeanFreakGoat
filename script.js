@@ -74,11 +74,10 @@ $(document).ready(function () {
         //current weather conditions
         var currentConditionEl = response.weather[0].description;
         $("#currentCondition").text(currentConditionEl);
-        //current weather icon **DOES NOT WORK
-        var iconCode = response.weather[0].icon.value;
-        console.log = iconCode;
+        //current weather icon from API SO UGLY
+        var iconCode = response.weather[0].icon;
         var iconUrl = "https://openweathermap.org/img/wn/" + iconCode + ".png";
-        $("#currentIcon").html("<img src=" + iconUrl + ">");
+        $("#currentIcon").attr('src', iconUrl);
     });
 
     // This is for forecast weather!
@@ -98,26 +97,41 @@ $(document).ready(function () {
         $("#day1Temp").html(tempEl1 + "&deg;F");
         var day1ConditionEl = response.list[0].weather[0].description;
         $("#day1Condition").text(day1ConditionEl);
+        var day1Icon = response.list[0].weather[0].icon;
+        var day1Url = "https://openweathermap.org/img/wn/" + day1Icon + ".png";
+        $("#day1Icon").attr("src", day1Url);
 
         var tempEl2 = response.list[8].main.temp;
         $("#day2Temp").html(tempEl2 + "&deg;F");
         var day2ConditionEl = response.list[8].weather[0].description;
         $("#day2Condition").text(day2ConditionEl);
+        var day2Icon = response.list[8].weather[0].icon;
+        var day2Url = "https://openweathermap.org/img/wn/" + day2Icon + ".png";
+        $("#day2Icon").attr("src", day2Url);
 
         var tempEl3 = response.list[17].main.temp;
         $("#day3Temp").html(tempEl3 + "&deg;F");
         var day3ConditionEl = response.list[17].weather[0].description;
         $("#day3Condition").text(day3ConditionEl);
+        var day3Icon = response.list[17].weather[0].icon;
+        var day3Url = "https://openweathermap.org/img/wn/" + day3Icon + ".png";
+        $("#day3Icon").attr("src", day3Url);
 
         var tempEl4 = response.list[26].main.temp;
         $("#day4Temp").html(tempEl4 + "&deg;F");
         var day4ConditionEl = response.list[26].weather[0].description;
         $("#day4Condition").text(day4ConditionEl);
+        var day4Icon = response.list[26].weather[0].icon;
+        var day4Url = "https://openweathermap.org/img/wn/" + day4Icon + ".png";
+        $("#day4Icon").attr("src", day4Url);
 
         var tempEl5 = response.list[35].main.temp;
         $("#day5Temp").html(tempEl5 + "&deg;F");
         var day5ConditionEl = response.list[35].weather[0].description;
         $("#day5Condition").text(day5ConditionEl);
+        var day5Icon = response.list[35].weather[0].icon;
+        var day5Url = "https://openweathermap.org/img/wn/" + day5Icon + ".png";
+        $("#day5Icon").attr("src", day5Url);
     });
 
     //when the page loads, user input is clear/empty.
@@ -147,7 +161,7 @@ $(document).ready(function () {
             $("#cityForecast").html(cityEl);
             //This is for current weather!
             var currentTempEl = response.main.temp;
-            $("#currentTemp").html(currentTempEl);
+            $("#currentTemp").html(currentTempEl + "&deg;F");
 
             var currentConditionEl = response.weather[0].description;
             $("#currentCondition").text(currentConditionEl);
@@ -163,31 +177,44 @@ $(document).ready(function () {
             //THESE ARE FOR THE FORECAST!
             var tempEl1 = response.list[0].main.temp;
             console.log(tempEl1);
-            $("#day1Temp").html(tempEl1);
+            $("#day1Temp").html(tempEl1 + "&deg;F");
             var day1ConditionEl = response.list[0].weather[0].description;
             $("#day1Condition").text(day1ConditionEl);
+            var day1Icon = response.list[0].weather[0].icon;
+            var day1Url = "https://openweathermap.org/img/wn/" + day1Icon + ".png";
+            $("#day1Icon").attr("src", day1Url);
 
             var tempEl2 = response.list[8].main.temp;
-            $("#day2Temp").html(tempEl2);
+            $("#day2Temp").html(tempEl2 + "&deg;F");
             var day2ConditionEl = response.list[8].weather[0].description;
             $("#day2Condition").text(day2ConditionEl);
+            var day2Icon = response.list[8].weather[0].icon;
+            var day2Url = "https://openweathermap.org/img/wn/" + day2Icon + ".png";
+            $("#day2Icon").attr("src", day2Url);
 
             var tempEl3 = response.list[17].main.temp;
-            $("#day3Temp").html(tempEl3);
+            $("#day3Temp").html(tempEl3 + "&deg;F");
             var day3ConditionEl = response.list[17].weather[0].description;
             $("#day3Condition").text(day3ConditionEl);
+            var day3Icon = response.list[17].weather[0].icon;
+            var day3Url = "https://openweathermap.org/img/wn/" + day3Icon + ".png";
+            $("#day3Icon").attr("src", day3Url);
 
             var tempEl4 = response.list[26].main.temp;
-            $("#day4Temp").html(tempEl4);
+            $("#day4Temp").html(tempEl4 + "&deg;F");
             var day4ConditionEl = response.list[26].weather[0].description;
             $("#day4Condition").text(day4ConditionEl);
+            var day4Icon = response.list[26].weather[0].icon;
+            var day4Url = "https://openweathermap.org/img/wn/" + day4Icon + ".png";
+            $("#day4Icon").attr("src", day4Url);
 
             var tempEl5 = response.list[35].main.temp;
-            $("#day5Temp").html(tempEl5);
+            $("#day5Temp").html(tempEl5 + "&deg;F");
             var day5ConditionEl = response.list[35].weather[0].description;
             $("#day5Condition").text(day5ConditionEl);
-
-
+            var day5Icon = response.list[35].weather[0].icon;
+            var day5Url = "https://openweathermap.org/img/wn/" + day5Icon + ".png";
+            $("#day5Icon").attr("src", day5Url);
         });
 
 

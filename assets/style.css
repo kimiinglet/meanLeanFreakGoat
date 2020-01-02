@@ -118,4 +118,8 @@ a {
     .field.is-grouped {
         flex-wrap: wrap;
     }
+    #currentCityWeather {
+        border: none;
+        border-bottom: #44355B dashed 1px;
+    }
   }
