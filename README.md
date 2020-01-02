@@ -17,6 +17,7 @@ Click on search to return results for any location near you, along with a 5 day 
 
 * [Google Maps](https://www.google.com/maps) - We draw from Google's API to grab locations and map area.
 * [Weather](https://openweathermap.org/) - We draw from Open Weather Map to grab current and future weather of the location you select.
+* [Weather Icons](https://github.com/erikflowers/weather-icons/) - We used Erik Flowers' beautiful weather icons.
 * [USA Data](https://www.data.gov/) - We used US Federal govt. open data to pull public land locations.
 * [Bulma](https://bulma.io/documentation/) - We used Bulma CSS framework. 
 * [Unsplash](https://unsplash.com/t/animals) - We used copyright-free images from this site.
