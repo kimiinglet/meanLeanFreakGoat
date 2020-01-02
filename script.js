@@ -70,7 +70,7 @@ $(document).ready(function () {
         //This is for current weather!
         var currentTempEl = response.main.temp;
         console.log(currentTempEl);
-        $("#currentTemp").html(currentTempEl);
+        $("#currentTemp").html(currentTempEl + "&deg;F");
         //current weather conditions
         var currentConditionEl = response.weather[0].description;
         $("#currentCondition").text(currentConditionEl);
@@ -94,27 +94,27 @@ $(document).ready(function () {
         //THESE ARE FOR THE FORECAST!
         var tempEl1 = response.list[0].main.temp;
         console.log(tempEl1);
-        $("#day1Temp").html(tempEl1);
+        $("#day1Temp").html(tempEl1 + "&deg;F");
         var day1ConditionEl = response.list[0].weather[0].description;
         $("#day1Condition").text(day1ConditionEl);
 
         var tempEl2 = response.list[8].main.temp;
-        $("#day2Temp").html(tempEl2);
+        $("#day2Temp").html(tempEl2 + "&deg;F");
         var day2ConditionEl = response.list[8].weather[0].description;
         $("#day2Condition").text(day2ConditionEl);
 
         var tempEl3 = response.list[17].main.temp;
-        $("#day3Temp").html(tempEl3);
+        $("#day3Temp").html(tempEl3 + "&deg;F");
         var day3ConditionEl = response.list[17].weather[0].description;
         $("#day3Condition").text(day3ConditionEl);
 
         var tempEl4 = response.list[26].main.temp;
-        $("#day4Temp").html(tempEl4);
+        $("#day4Temp").html(tempEl4 + "&deg;F");
         var day4ConditionEl = response.list[26].weather[0].description;
         $("#day4Condition").text(day4ConditionEl);
 
         var tempEl5 = response.list[35].main.temp;
-        $("#day5Temp").html(tempEl5);
+        $("#day5Temp").html(tempEl5 + "&deg;F");
         var day5ConditionEl = response.list[35].weather[0].description;
         $("#day5Condition").text(day5ConditionEl);
     });
