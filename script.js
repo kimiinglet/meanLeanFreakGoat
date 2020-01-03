@@ -160,7 +160,7 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             var cityEl = response.name;
-            $("#cityForecast").html(cityEl);
+            $("#cityForecast").html("Weather Forecast: " + cityEl);
             //This is for current weather!
             var currentTempEl = response.main.temp;
             $("#currentTemp").html(currentTempEl + "&deg;F");
@@ -238,7 +238,7 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
+$(document).ready(function () { //is it okay to delete this? We have 2 document ready functions. Unless this doesn't work without it?
 
     // COLORADO -- On Click that only works one time
     $('#CO').one('click', function () {

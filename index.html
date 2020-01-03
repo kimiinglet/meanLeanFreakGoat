@@ -190,7 +190,7 @@
                         <!--Image is placeholder for maps API-->
                         <!-- <div id="map" class="is-full-width"> -->
                         <!-- clickable div image -->
-                        <div class="clickable-states">
+                        <div class="clickable-states level-item">
                             <div id="info-box"></div>
                             <?xml version="1.0" encoding="utf-8"?>
                             <svg xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -384,8 +384,13 @@
                                     d="M385,593v55l36,45 M174,525h144l67,68h86l53,54v46" />
 
                             </svg>
+                            <!--For Links to appear after state is clicked-->
+                            <div class="tile is-child level-item" id="resultLinks">
 
+                                <div id="blm-link"></div>
+                                <div id="forestService-link"></div>
 
+<<<<<<< HEAD
 
                             <!-- <a href="https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals"
                                 target="_blank"
@@ -399,21 +404,18 @@
                 </div>
                 <hr>
 
+=======
+                            </div>
+                        </div>
+                    </article>
+                </div>
+>>>>>>> ad1ce541d732d7896a88d892beb839e755be88ca
             </div>
-
-            <!--For Links to appear after state is clicked-->
-            <div class="tile is-parent">
-
-                <div id="blm-link"></div>
-                <div id="forestService-link"></div>
-
-            </div>
-
 
             <div class="tile is-parent">
                 <article class="tile is-child notification is-danger" id="weatherBox">
                     <!--We can dynamically append the city name here.-->
-                    <p class="title" id="cityForecast">Weather Forecast: </p>
+                    <p class="title" id="cityForecast"></p>
                     <div class="columns">
                         <!-- Content -->
                         <div class="column" id="currentCityWeather">

@@ -19,6 +19,10 @@ i {
     font-size: 5rem;
 }
 
+.image.is-1by1 {
+    padding-top: 0% !important;
+}
+
 #wanderDogSlogan p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -70,6 +74,13 @@ i {
 
 #mapsBox {
     background-color: #44355B;
+    position: relative;
+}
+
+#resultLinks {
+    position: absolute;
+    bottom: 0;
+    color: #ECA72C;
 }
 
 /* somebody fix this box!!! it keeps getting out of its parent container and I can't stop it! */
