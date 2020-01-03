@@ -81,6 +81,13 @@ i {
     position: absolute;
     bottom: 0;
     color: #ECA72C;
+    padding-bottom: 10%;
+    font-size: 24px;
+    font-family: 'Baskervville', serif;
+}
+
+.notification a:not(.button):not(.dropdown-item) {
+    text-decoration: none !important;
 }
 
 /* somebody fix this box!!! it keeps getting out of its parent container and I can't stop it! */
