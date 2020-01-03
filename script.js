@@ -193,6 +193,7 @@ $(document).ready(function () {
 
     // Links to Forest Service and BLM appear when state is clicked
 
+
     // COLORADO -- On Click that only works one time
     $('#CO').one('click', function () {
 
