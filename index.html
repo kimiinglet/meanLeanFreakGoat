@@ -49,7 +49,7 @@
 
     <!--This box holds our welcome and information on the page. CL-->
     <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8" id="contentBox">
+        <div class="tile is-vertical is-10" id="contentBox">
             <div class="tile">
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification is-primary" id="welcomeBox">
@@ -188,8 +188,6 @@
                     <article class="tile is-child notification is-info" id="mapsBox">
 
                         <!--Image is placeholder for maps API-->
-                        <!-- <div id="map" class="is-full-width"> -->
-                        <!-- clickable div image -->
                         <div class="clickable-states">
                             <div id="info-box"></div>
                             <?xml version="1.0" encoding="utf-8"?>
@@ -400,7 +398,7 @@
                 <article class="tile is-child notification is-danger" id="weatherBox">
                     <!--We can dynamically append the city name here.-->
                     <p class="title" id="cityForecast"></p>
-                    <div class="columns">
+                    <div class="columns is-multiline">
                         <!-- Content -->
                         <div class="column" id="currentCityWeather">
                             <figure class="image">
