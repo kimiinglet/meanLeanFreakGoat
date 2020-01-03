@@ -232,3 +232,93 @@ $(document).ready(function () {
     });
 
 });
+
+
+// Links to Forest Service and BLM appear when state is clicked
+
+
+
+$(document).ready(function () {
+
+    // COLORADO -- On Click that only works one time
+    $('#CO').one('click', function () {
+
+        var blmLink = document.getElementById("blm-link");
+        var aTag = document.createElement('a');
+
+        aTag.setAttribute('href', "https://www.blm.gov/colorado");
+        aTag.innerText = "Colorado BLM";
+        blmLink.appendChild(aTag);
+
+
+    });
+
+
+    $('#CO').one('click', function () {
+        var fsLink = document.getElementById("forestService-link");
+        var aTag = document.createElement('a');
+        aTag.setAttribute('href', "https://www.fs.fed.us/r2/recreation/map/colorado/html-current/colorado-hi-speed-index.shtml");
+        aTag.innerText = "Colorado Forest Service";
+        fsLink.appendChild(aTag);
+    });
+
+
+
+    // NEW MEXICO -- On Click that only works one time
+    $('#NM').one('click', function () {
+
+        var blmLink = document.getElementById("blm-link");
+        var aTag = document.createElement('a');
+
+        aTag.setAttribute('href', "https://www.blm.gov/newmexico");
+        aTag.innerText = "New Mexico BLM";
+        blmLink.appendChild(aTag);
+    });
+
+
+    $('#NM').one('click', function () {
+        var fsLink = document.getElementById("forestService-link");
+        var aTag = document.createElement('a');
+        aTag.setAttribute('href', "https://www.fs.fed.us/sopa/state-level.php?nm");
+        aTag.innerText = "New Mexico Forest Service";
+        fsLink.appendChild(aTag);
+    });
+
+    // Not working, looking to remove previous links when another state is clicked.
+    if (aTag.length <= 1) {
+        aTag.remove;
+    }
+});
+
+
+
+// Links to Forest Service and BLM appear when state is clicked
+
+
+
+// script for clickable map
+$("path, circle").hover(function (e) {
+    $('#info-box').css('display', 'block');
+    $('#info-box').html($(this).data('info'));
+});
+
+$("path, circle").mouseleave(function (e) {
+    $('#info-box').css('display', 'none');
+});
+
+$(document).mousemove(function (e) {
+    $('#info-box').css('top', e.pageY - $('#info-box').height() - 30);
+    $('#info-box').css('left', e.pageX - ($('#info-box').width()) / 2);
+}).mouseover();
+
+
+
+
+var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if (ios) {
+    $('a').on('click touchend', function () {
+        var link = $(this).attr('href');
+        window.open(link, '_blank');
+        return false;
+    });
+}
