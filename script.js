@@ -36,8 +36,7 @@ $(document).ready(function () {
         console.log(response);
         //logging to see if query works.
         var cityEl = response.name;
-        console.log(cityEl);
-        $("#cityForecast").html(cityEl);
+        $("#cityForecast").html("Weather Forecast: " + cityEl);
         //This is for current weather!
         var currentTempEl = response.main.temp;
         console.log(currentTempEl);

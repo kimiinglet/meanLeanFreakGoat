@@ -11,7 +11,7 @@ body {
 }
 
 i {
-    font-size: 100px;
+    font-size: xx-large;
 }
 
 #wanderDogTitle {
@@ -19,8 +19,9 @@ i {
     font-size: 5rem;
 }
 
-.image.is-1by1 {
+.image {
     padding-top: 0% !important;
+    text-align: center;
 }
 
 #wanderDogSlogan p {
