@@ -240,6 +240,7 @@ $(document).ready(function () {
 
 $(document).ready(function () { //is it okay to delete this? We have 2 document ready functions. Unless this doesn't work without it?
 
+
     // COLORADO -- On Click that only works one time
     $('#CO').one('click', function () {
 
