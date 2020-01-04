@@ -183,7 +183,7 @@ $(document).ready(function () {
         });
 
         //dropdown option linked to clickable map info -- KI
-         $("#stateDropdown").on('submitBtn' function() {
+         $("#stateDropdown").on('submitBtn', function() {
             $("#g5")
          });
 
