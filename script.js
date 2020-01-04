@@ -1,16 +1,3 @@
-//api keys for maps, weather, gov data, etc. are in the config.js. This is for security reasons so API keys don't get stolen.. 
-var mapsKey = "AIzaSyCY_qAq37SMtQG_l9NvDHiXLr5A5FlhlZ0";
-
-//this key will only work on local machines. Must have another variable with a Maps API key that is in this script.
-
-var gKey = "";
-
-try {
-    gKey = config.myGKey;
-} catch (error) {
-    // no operation; keeps going
-}
-
 //this key will work on local and website.
 var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 
@@ -35,22 +22,6 @@ $(document).ready(function () {
         }
     });
 
-    //when page loads, maps should be default Austin, TX, 50 mile range. THIS DOESN'T WORK YET.
-    //https://developers.google.com/maps/documentation/javascript/tutorial
-    document.addEventListener('DOMContentLoaded', function () {
-        var js_file = document.createElement('script');
-        js_file.type = 'text/javascript';
-        js_file.src = "https://maps.googleapis.com/maps/api/js?key=" + gKey + "&callback=initMap";
-        mapBox.html(js_file);
-
-        function initMap() {
-            mapBox = new google.maps.Map(mapBox), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8
-            };
-        }
-    });
-
     //when page loads, weather should be default, Austin, TX. This is for current weather! 
 
     var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q=Austin,us&units=imperial&appid=" + weatherKey;
@@ -65,8 +36,7 @@ $(document).ready(function () {
         console.log(response);
         //logging to see if query works.
         var cityEl = response.name;
-        console.log(cityEl);
-        $("#cityForecast").html(cityEl);
+        $("#cityForecast").html("Weather Forecast: " + cityEl);
         //This is for current weather!
         var currentTempEl = response.main.temp;
         console.log(currentTempEl);
@@ -131,7 +101,7 @@ $(document).ready(function () {
         $("#day5Temp").html(tempEl5 + "&deg;F");
         var day5ConditionEl = response.list[35].weather[0].description;
         $("#day5Condition").text(day5ConditionEl);
-        var day5Icon = response.list[35].weather[0].icon;
+        var day5Icon = response.list[35].weather[0].id;
         var flowersD5Icon = "wi wi-owm-" + day5Icon;
         $("#day5Icon").attr('class', flowersD5Icon);
     });
@@ -141,17 +111,6 @@ $(document).ready(function () {
 
     //when you click on submit, we will take note of city/state || zip, and radius. THIS DOESN'T WORK YET
     submitButton.click(function () {
-        //pull data Google Maps.
-
-
-
-
-        //using use the location from Google maps (radius) to find any public land from the Govt API. 
-        /* 
-        https://catalog.data.gov/dataset/usgs-national-boundary-dataset-nbd-downloadable-data-collectionbc141
-        https://catalog.data.gov/dataset/trail-line-and-point-features-u-s-fish-and-wildlife-service
-     
-        */
 
         var userCurrentWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + (usCity[0].value || zipcodeInput[0].value) + ",us&units=imperial&appid=" + weatherKey;
 
@@ -160,13 +119,17 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             var cityEl = response.name;
-            $("#cityForecast").html(cityEl);
+            $("#cityForecast").html("Weather Forecast: " + cityEl);
             //This is for current weather!
             var currentTempEl = response.main.temp;
             $("#currentTemp").html(currentTempEl + "&deg;F");
 
             var currentConditionEl = response.weather[0].description;
             $("#currentCondition").text(currentConditionEl);
+            var iconCode = response.weather[0].id;
+            var flowersIcon = "wi wi-owm-" + iconCode;
+            console.log(flowersIcon);
+            $("#currentIcon").attr('class', flowersIcon);
         });
 
         //using user input City/State or Zip, pull weather data.
@@ -182,41 +145,41 @@ $(document).ready(function () {
             $("#day1Temp").html(tempEl1 + "&deg;F");
             var day1ConditionEl = response.list[0].weather[0].description;
             $("#day1Condition").text(day1ConditionEl);
-            var day1Icon = response.list[0].weather[0].icon;
-            var day1Url = "https://openweathermap.org/img/wn/" + day1Icon + ".png";
-            $("#day1Icon").attr("src", day1Url);
+            var day1Icon = response.list[0].weather[0].id;
+            var flowersD1Icon = "wi wi-owm-" + day1Icon;
+            $("#day1Icon").attr('class', flowersD1Icon);
 
             var tempEl2 = response.list[8].main.temp;
             $("#day2Temp").html(tempEl2 + "&deg;F");
             var day2ConditionEl = response.list[8].weather[0].description;
             $("#day2Condition").text(day2ConditionEl);
-            var day2Icon = response.list[8].weather[0].icon;
-            var day2Url = "https://openweathermap.org/img/wn/" + day2Icon + ".png";
-            $("#day2Icon").attr("src", day2Url);
+            var day2Icon = response.list[8].weather[0].id;
+            var flowersD2Icon = "wi wi-owm-" + day2Icon;
+            $("#day2Icon").attr('class', flowersD2Icon);
 
             var tempEl3 = response.list[17].main.temp;
             $("#day3Temp").html(tempEl3 + "&deg;F");
             var day3ConditionEl = response.list[17].weather[0].description;
             $("#day3Condition").text(day3ConditionEl);
-            var day3Icon = response.list[17].weather[0].icon;
-            var day3Url = "https://openweathermap.org/img/wn/" + day3Icon + ".png";
-            $("#day3Icon").attr("src", day3Url);
+            var day3Icon = response.list[17].weather[0].id;
+            var flowersD3Icon = "wi wi-owm-" + day3Icon;
+            $("#day3Icon").attr('class', flowersD3Icon);
 
             var tempEl4 = response.list[26].main.temp;
             $("#day4Temp").html(tempEl4 + "&deg;F");
             var day4ConditionEl = response.list[26].weather[0].description;
             $("#day4Condition").text(day4ConditionEl);
-            var day4Icon = response.list[26].weather[0].icon;
-            var day4Url = "https://openweathermap.org/img/wn/" + day4Icon + ".png";
-            $("#day4Icon").attr("src", day4Url);
+            var day4Icon = response.list[26].weather[0].id;
+            var flowersD4Icon = "wi wi-owm-" + day4Icon;
+            $("#day4Icon").attr('class', flowersD4Icon);
 
             var tempEl5 = response.list[35].main.temp;
             $("#day5Temp").html(tempEl5 + "&deg;F");
             var day5ConditionEl = response.list[35].weather[0].description;
             $("#day5Condition").text(day5ConditionEl);
-            var day5Icon = response.list[35].weather[0].icon;
-            var day5Url = "https://openweathermap.org/img/wn/" + day5Icon + ".png";
-            $("#day5Icon").attr("src", day5Url);
+            var day5Icon = response.list[35].weather[0].id;
+            var flowersD5Icon = "wi wi-owm-" + day5Icon;
+            $("#day5Icon").attr('class', flowersD5Icon);
         });
 
 
@@ -1148,6 +1111,9 @@ $(document).ready(function () {
 
 
 
+// Links to Forest Service and BLM appear when state is clicked
+
+
 
 // script for clickable map
 $("path, circle").hover(function (e) {
@@ -1163,9 +1129,6 @@ $(document).mousemove(function (e) {
     $('#info-box').css('top', e.pageY - $('#info-box').height() - 30);
     $('#info-box').css('left', e.pageX - ($('#info-box').width()) / 2);
 }).mouseover();
-
-
-
 
 var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 if (ios) {

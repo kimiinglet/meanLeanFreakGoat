@@ -11,12 +11,17 @@ body {
 }
 
 i {
-    height: 400%;
+    font-size: xx-large;
 }
 
 #wanderDogTitle {
     font-family: 'Baskervville', serif;
     font-size: 5rem;
+}
+
+.image {
+    padding-top: 0% !important;
+    text-align: center;
 }
 
 #wanderDogSlogan p {
@@ -70,12 +75,20 @@ i {
 
 #mapsBox {
     background-color: #44355B;
+    position: relative;
 }
 
-/* somebody fix this box!!! it keeps getting out of its parent container and I can't stop it! */
-#map {
-    border: #F6F7F8 solid 1px;
-    height: 100%;
+#resultLinks {
+    position: absolute;
+    bottom: 0;
+    color: #ECA72C;
+    padding-bottom: 10%;
+    font-size: 24px;
+    font-family: 'Montserrat', serif;
+}
+
+.notification a:not(.button):not(.dropdown-item) {
+    text-decoration: none !important;
 }
 
 #weatherBox {

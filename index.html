@@ -49,7 +49,7 @@
 
     <!--This box holds our welcome and information on the page. CL-->
     <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8" id="contentBox">
+        <div class="tile is-vertical is-10" id="contentBox">
             <div class="tile">
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification is-primary" id="welcomeBox">
@@ -188,8 +188,6 @@
                     <article class="tile is-child notification is-info" id="mapsBox">
 
                         <!--Image is placeholder for maps API-->
-                        <!-- <div id="map" class="is-full-width"> -->
-                        <!-- clickable div image -->
                         <div class="clickable-states">
                             <div id="info-box"></div>
                             <?xml version="1.0" encoding="utf-8"?>
@@ -384,20 +382,17 @@
                                     d="M385,593v55l36,45 M174,525h144l67,68h86l53,54v46" />
 
                             </svg>
-
-
-
-                            <a href="https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals"
-                                target="_blank"
-                                style="position: absolute; bottom: 0px; right: 0px; text-decoration: none; color: #8a8787">Tutorial
-                                is on Website Beaver</a>
-                            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-                            <!-- </div> -->
                         </div>
+                        <!--For Links to appear after state is clicked-->
+                        <div class="tile is-child" id="resultLinks">
 
+                            <div id="blm-link"></div>
+                            <div id="forestService-link"></div>
 
+                        </div>
                     </article>
                 </div>
+<<<<<<< HEAD
 
 
             </div>
@@ -413,17 +408,18 @@
                 </ul>
 
 
+=======
+>>>>>>> 32aabb7817d4e68a7700c6def50caeb313ab5152
             </div>
-
 
             <div class="tile is-parent">
                 <article class="tile is-child notification is-danger" id="weatherBox">
                     <!--We can dynamically append the city name here.-->
-                    <p class="title" id="cityForecast">Weather Forecast: </p>
-                    <div class="columns">
+                    <p class="title" id="cityForecast"></p>
+                    <div class="columns is-multiline">
                         <!-- Content -->
                         <div class="column" id="currentCityWeather">
-                            <figure class="image is-1by1">
+                            <figure class="image">
                                 <i id="currentIcon"></i></figure>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="currentTemp">
                                 <!--Add temperature here!-->
@@ -434,7 +430,7 @@
                             </h3>
                         </div>
                         <div class="column" id="day1Forecast">
-                            <figure class="image is-1by1">
+                            <figure class="image">
                                 <i id="day1Icon"></i></figure>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day1Temp">
                             </h1>
@@ -443,7 +439,7 @@
                             </h3>
                         </div>
                         <div class="column" id="day2Forecast">
-                            <figure class="image is-1by1">
+                            <figure class="image">
                                 <i id="day2Icon"></i></figure>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day2Temp">
                             </h1>
@@ -452,7 +448,7 @@
                             </h3>
                         </div>
                         <div class="column" id="day3Forecast">
-                            <figure class="image is-1by1">
+                            <figure class="image">
                                 <i id="day3Icon"></i></figure>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day3Temp">
                             </h1>
@@ -461,7 +457,7 @@
                             </h3>
                         </div>
                         <div class="column" id="day4Forecast">
-                            <figure class="image is-1by1">
+                            <figure class="image">
                                 <i id="day4Icon"></i></figure>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day4Temp">
                             </h1>
@@ -470,7 +466,7 @@
                             </h3>
                         </div>
                         <div class="column" id="day5Forecast">
-                            <figure class="image is-1by1">
+                            <figure class="image">
                                 <i id="day5Icon"></i></figure>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day5Temp">
                             </h1>
@@ -489,16 +485,11 @@
             <p id="footerTxt">
                 Wanderdog by <a href="https://github.com/kimiinglet/meanLeanFreakGoat">Crystal Ly, Kimi
                     Inglet, and Justin Wofford</a>. Copyright &copy; 2020
-
-
-
             </p>
         </div>
     </footer>
-</body>
-<script type='text/javascript' src='config.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
 
 </body>
 
