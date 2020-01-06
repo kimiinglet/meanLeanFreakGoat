@@ -71,7 +71,7 @@
         <div class="tile is-vertical is-10" id="contentBox">
             <div class="tile is-parent">
                 <!--This tile is for the maps-->
-                <div class="tile is-parent is-8" id="mapsBox">
+                <div class="tile is-parent" id="mapsBox">
                     <div class="clickable-states">
                         <div id="info-box"></div>
                         <?xml version="1.0" encoding="utf-8"?>
@@ -264,7 +264,7 @@
                     </div>
                 </div>
                 <!--For Links to appear after state is clicked-->
-                <div class="tile is-parent is-3" id="infoBox">
+                <div class="tile is-parent" id="infoTile">
                     <div class="content">
                         <p class="title">Links to Public Land:</p>
                         <div class="content">
@@ -282,8 +282,8 @@
 
             <!--This is where the user inputs their city/zip for weather.-->
             <div class="tile is-parent">
-                <article class="tile is-parent notification is-warning is-3" id="searchBox">
-                    <p class="title">Search for weather & forecast</p>
+                <article class="tile is-child notification is-warning" id="searchBox">
+                    <p class="title">Search</p>
                     <div id="searchBox">
                         <div id="searchSpecs">
                             <label class="label is-medium">City and State</label>
@@ -318,7 +318,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="tile is-parent notification is-danger is-8" id="weatherBox">
+                <article class="tile is-child notification is-danger" id="weatherBox">
                     <!--We can dynamically append the city name here.-->
                     <p class="title" id="cityForecast"></p>
                     <div class="columns is-multiline">
@@ -401,7 +401,7 @@
     </footer>
     <script type="text/javascript" src="scripts/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/script.js" defer></script>
+    <script type="text/javascript" src="scripts/recreationAPI.js" defer></script>
 
 </body>
 
