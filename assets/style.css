@@ -66,7 +66,9 @@ i {
 }
 
 .title {
-    color: #ECA72C;
+    color: #F6F7F8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
 }
 
 .subtitle {
@@ -110,15 +112,6 @@ i {
     margin: 5px;
 }
 
-#resultLinks {
-    position: absolute;
-    bottom: 0;
-    color: #ECA72C;
-    padding-bottom: 10%;
-    font-size: 24px;
-    font-family: 'Montserrat', serif;
-}
-
 .notification a:not(.button):not(.dropdown-item) {
     text-decoration: none !important;
 }
@@ -141,12 +134,16 @@ i {
 }
 
 a {
+    font-family: 'Montserrat', serif;
     color: #F6F7F8;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
+ul {
+    margin: 0;
+}
 li {
-    color: #ECA72C;
+    color: #F6F7F8;
     list-style-type:none;
 }
 
@@ -203,6 +200,12 @@ clickable map css */
   @media screen and (max-width: 640px) {
     body {
       text-align: center;
+    }
+    li {
+        text-align: left;
+    }
+    p, li, a{
+        font-size: medium;
     }
     #wanderDogTitle {
         font-size: 2rem;
