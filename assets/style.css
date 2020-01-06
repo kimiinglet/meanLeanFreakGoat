@@ -10,6 +10,44 @@ body {
     background: url("images/connectwork-red.jpg");
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #F6F7F8;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #F6F7F8;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 i {
     font-size: xx-large;
 }
@@ -28,6 +66,10 @@ i {
     font-family: 'Montserrat', sans-serif;
 }
 
+.title {
+    color: #ECA72C;
+}
+
 .subtitle {
     padding-left: 10%;
 }
@@ -43,30 +85,17 @@ i {
     margin-bottom: 5px;
 }
 
-/* colors can be altered; I used coolers.io to pick a color scheme. CL */
-
-#btn25 {
-    background-color: #FF3366;
-}
-
-#btn50 {
-    background-color: #F6F7F8;
-}
-
-#btn100 {
-    background-color: #44355B;
-}
-
-#btn50:hover {
-    border-color: #ECA72C;
-}
-
 #contentBox {
     margin: 0 auto;
 }
 
-#welcomeBox {
+#infoTile {
+    padding-left: 10px;
     background-color: #FF3366;
+    border-radius: 5px;
+    color: #ECA72C;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #searchBox {
@@ -76,6 +105,7 @@ i {
 #mapsBox {
     background-color: #44355B;
     position: relative;
+    border-radius: 5px;
 }
 
 #resultLinks {
@@ -108,7 +138,13 @@ i {
 }
 
 a {
+    color: #F6F7F8;
+    font-size: 2rem;
+}
+
+li {
     color: #ECA72C;
+    list-style-type:none;
 }
 
 .weatherTemp {
@@ -123,7 +159,6 @@ a {
 clickable map css */
 #us-map{
     display: block;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -143,12 +178,11 @@ clickable map css */
   }
   #info-box {
     display: none;
-    position: absolute;
     top: 0px;
     left: 0px;
     z-index: 1;
-    background-color: #ffffff;
-    border: 2px solid #BF0A30;
+    background-color: #F6F7F8;
+    border: 2px solid #FF3366;
     border-radius: 5px;
     padding: 5px;
     font-family: arial;
