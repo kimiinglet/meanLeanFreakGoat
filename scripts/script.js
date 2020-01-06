@@ -182,6 +182,11 @@ $(document).ready(function () {
             $("#day5Icon").attr('class', flowersD5Icon);
         });
 
+        //dropdown option linked to clickable map info -- KI
+         $("#stateDropdown").on('submitBtn', function() {
+            $("#g5")
+         });
+
 
         clearButton.on("click", function () {
             $('select option:contains("Select Dropdown")').prop('selected', true);
@@ -1115,7 +1120,7 @@ $(document).ready(function () {
 
 
 
-// script for clickable map
+// script for clickable map -- KI
 $("path, circle").hover(function (e) {
     $('#info-box').css('display', 'block');
     $('#info-box').html($(this).data('info'));
