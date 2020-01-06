@@ -33,6 +33,24 @@
 <!--When adding images from Unsplash, you can embed a credit badge into the HTML to credit the photographer. -->
 
 <body>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Welcome!</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <!-- Content ... -->
+                Blah blah info on parks and forests
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success" id="userUnderstands">I understand</button>
+                <button class="button" id="canceled">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
     <section class="hero is-large has-bg-img">
         <div class="hero-body">
             <div class="container">
@@ -418,6 +436,7 @@
                         <div class="column" id="currentCityWeather">
                             <figure class="image">
                                 <i id="currentIcon"></i></figure>
+                            <h6 id="currentDate"></h6>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="currentTemp">
                                 <!--Add temperature here!-->
                             </h1>
@@ -429,6 +448,7 @@
                         <div class="column" id="day1Forecast">
                             <figure class="image">
                                 <i id="day1Icon"></i></figure>
+                            <h6 id="day1Date"></h6>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day1Temp">
                             </h1>
                             <h3 class="weatherCondition has-text-centered is-size-5" id="day1Condition">
@@ -438,6 +458,7 @@
                         <div class="column" id="day2Forecast">
                             <figure class="image">
                                 <i id="day2Icon"></i></figure>
+                            <h6 id="day2Date"></h6>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day2Temp">
                             </h1>
                             <h3 class="weatherCondition has-text-centered is-size-5" id="day2Condition">
@@ -447,6 +468,7 @@
                         <div class="column" id="day3Forecast">
                             <figure class="image">
                                 <i id="day3Icon"></i></figure>
+                            <h6 id="day3Date"></h6>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day3Temp">
                             </h1>
                             <h3 class="weatherCondition has-text-centered is-size-5" id="day3Condition">
@@ -456,6 +478,7 @@
                         <div class="column" id="day4Forecast">
                             <figure class="image">
                                 <i id="day4Icon"></i></figure>
+                            <h6 id="day4Date"></h6>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day4Temp">
                             </h1>
                             <h3 class="weatherCondition has-text-centered is-size-5" id="day4Condition">
@@ -465,6 +488,7 @@
                         <div class="column" id="day5Forecast">
                             <figure class="image">
                                 <i id="day5Icon"></i></figure>
+                            <h6 id="day5Date"></h6>
                             <h1 class="weatherTemp has-text-centered is-size-2" id="day5Temp">
                             </h1>
                             <h3 class="weatherCondition has-text-centered is-size-5" id="day5Condition">

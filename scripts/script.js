@@ -8,9 +8,22 @@ $(document).ready(function () {
     var submitButton = $("#submitBtn");
     var clearButton = $("#clearBtn");
     var zipcodeInput = $("#zipcodeInput");
-    var usState = $("#statesDropdown");
     var usCity = $("#cityInput");
-    var mapBox = $("#map");
+
+
+    $(".modal").addClass("is-active");
+
+    $(".delete").click(function () {
+        $(".modal").removeClass("is-active");
+    });
+
+    $("#canceled").click(function () {
+        $(".modal").removeClass("is-active");
+    });
+
+    $("#userUnderstands").click(function () {
+        $(".modal").removeClass("is-active");
+    });
 
     //I just wanted to fade the header for fun. --CL
     $(window).on('scroll', function () {
@@ -183,9 +196,9 @@ $(document).ready(function () {
         });
 
         //dropdown option linked to clickable map info -- KI
-         $("#stateDropdown").on('submitBtn', function() {
+        $("#stateDropdown").on('submitBtn', function () {
             $("#g5")
-         });
+        });
 
 
         clearButton.on("click", function () {

@@ -23,6 +23,7 @@ Click on search to return results for any location near you, along with a 5 day 
 * [Unsplash](https://unsplash.com/t/animals) - We used copyright-free images from this site.
 * [FontAwesome](https://fontawesome.com/) - We used the paw and dog icon.
 * [Google Fonts](https://fonts.google.com/) - We used 2 font styles from Google Fonts.
+* [Moment](https://momentjs.com/) - We used Moment to grab current date and forecast dates.
 
 ## Contributing
 
