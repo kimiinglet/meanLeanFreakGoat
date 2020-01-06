@@ -89,23 +89,26 @@ i {
     margin: 0 auto;
 }
 
-#infoTile {
+#infoBox {
     padding-left: 10px;
     background-color: #FF3366;
     border-radius: 5px;
     color: #ECA72C;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
+    margin: 5px;
 }
 
 #searchBox {
     background-color: #F6F7F8;
+    margin: 5px;
 }
 
 #mapsBox {
     background-color: #44355B;
     position: relative;
     border-radius: 5px;
+    margin: 5px;
 }
 
 #resultLinks {
@@ -123,6 +126,7 @@ i {
 
 #weatherBox {
     background-color: #ECA72C;
+    margin: 5px;
 }
 
 #currentCityWeather {
