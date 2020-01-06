@@ -66,6 +66,10 @@ i {
     font-family: 'Montserrat', sans-serif;
 }
 
+.title {
+    color: #ECA72C;
+}
+
 .subtitle {
     padding-left: 10%;
 }
@@ -79,24 +83,6 @@ i {
 
 #cityInput {
     margin-bottom: 5px;
-}
-
-/* colors can be altered; I used coolers.io to pick a color scheme. CL */
-
-#btn25 {
-    background-color: #FF3366;
-}
-
-#btn50 {
-    background-color: #F6F7F8;
-}
-
-#btn100 {
-    background-color: #44355B;
-}
-
-#btn50:hover {
-    border-color: #ECA72C;
 }
 
 #contentBox {
@@ -152,7 +138,13 @@ i {
 }
 
 a {
+    color: #F6F7F8;
+    font-size: 2rem;
+}
+
+li {
     color: #ECA72C;
+    list-style-type:none;
 }
 
 .weatherTemp {
