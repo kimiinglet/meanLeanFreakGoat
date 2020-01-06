@@ -5,7 +5,13 @@ This application draws from public information to obtain free trails, camp groun
 ## Getting Started
 
 These instructions will help you locate the perfect spot to spend time with your pups.
+
+As a dog owner, I want to find areas in the US where I can camp/hike with my dog off-leash, so that I can spend quality time with my dog and allow my dog to explore nature.
 * [Click Here!](https://kimiinglet.github.io/meanLeanFreakGoat/)
+
+## Wireframe
+
+<img src="assets/images/wireframe.jpg" width="100%" height="auto">
 
 ## Running the search engine
 
