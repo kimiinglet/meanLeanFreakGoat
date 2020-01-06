@@ -69,6 +69,7 @@ i {
     color: #F6F7F8;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
+    word-break: keep-all;
 }
 
 .subtitle {
@@ -103,6 +104,10 @@ i {
 #searchBox {
     background-color: #F6F7F8;
     margin: 5px;
+}
+
+#searchBoxForm {
+    box-sizing: border-box;
 }
 
 #mapsBox {
