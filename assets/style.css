@@ -103,8 +103,13 @@ i {
     margin: 0 auto;
 }
 
-#welcomeBox {
+#infoTile {
+    padding-left: 10px;
     background-color: #FF3366;
+    border-radius: 5px;
+    color: #ECA72C;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #searchBox {
@@ -114,6 +119,7 @@ i {
 #mapsBox {
     background-color: #44355B;
     position: relative;
+    border-radius: 5px;
 }
 
 #resultLinks {
@@ -161,7 +167,6 @@ a {
 clickable map css */
 #us-map{
     display: block;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -181,12 +186,11 @@ clickable map css */
   }
   #info-box {
     display: none;
-    position: absolute;
     top: 0px;
     left: 0px;
     z-index: 1;
-    background-color: #ffffff;
-    border: 2px solid #BF0A30;
+    background-color: #F6F7F8;
+    border: 2px solid #FF3366;
     border-radius: 5px;
     padding: 5px;
     font-family: arial;
