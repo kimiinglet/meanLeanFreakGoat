@@ -68,6 +68,11 @@ body {
     cursor: pointer;
   }
 
+  #modalPrompt {
+      color: #F6F7F8;
+      font-size: 1rem;
+  }
+
 .hero {
     position: relative;
 }

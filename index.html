@@ -34,7 +34,7 @@
 
 <body>
     <!--Modal pops up so the user can understand what the site is about, and disclaimer-->
-    <div class="modal">
+    <div class="modal" id="welcomeModal">
         <div class="modal-background"></div>
         <div class="modal-card">
             <header class="modal-card-head">
@@ -63,6 +63,19 @@
                 <button class="button is-success" id="userUnderstands">I
                     understand</button>
                 <button class="button" id="canceled">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="invalidZip">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <section class="modal-card-body">
+                <p id="modalPrompt">Invalid Zipcode!</p>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success" id="userTriesAgain">Try Again</button>
+                <button class="button" id="canceled2">Cancel</button>
             </footer>
         </div>
     </div>
