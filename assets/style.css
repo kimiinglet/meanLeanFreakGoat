@@ -48,7 +48,13 @@ body {
   }
 
 i {
-    font-size: xx-large;
+    font-size: 3rem;
+}
+
+.label.is-medium {
+    font-family: 'Baskervville', serif;
+    font-size: 1.7rem;
+    color: #44355B;
 }
 
 #wanderDogTitle {
@@ -61,8 +67,15 @@ i {
     text-align: center;
 }
 
-#wanderDogSlogan p {
+#wanderDogSlogan {
     font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #F6F7F8 !important;
+    font-style: italic;
+    text-align: center;
 }
 
 .title {
@@ -70,6 +83,18 @@ i {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     word-break: keep-all;
+}
+
+#searchTitle {
+    color: #44355B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    word-break: keep-all;
+    font-size: 2rem;
+}
+
+.content {
+    margin: 0 auto;
 }
 
 .subtitle {
@@ -104,10 +129,12 @@ i {
 #searchBox {
     background-color: #F6F7F8;
     margin: 5px;
+    box-sizing: border-box;
 }
 
 #searchBoxForm {
-    box-sizing: border-box;
+    margin-top: 20%;
+    padding-right: 10px;
 }
 
 #mapsBox {
@@ -154,10 +181,20 @@ li {
 
 .weatherTemp {
     font-family: 'Baskervville', serif;
+    color: #F6F7F8 !important;
 }
 
 .weatherCondition {
     font-family: 'Montserrat', sans-serif;
+    color: #F6F7F8 !important;
+}
+
+.tile.is-2 {
+    flex: auto !important;
+}
+
+.tile.is-1 {
+    flex: auto !important;
 }
 
 /* 

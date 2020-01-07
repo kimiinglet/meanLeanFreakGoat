@@ -10,7 +10,7 @@ $(document).ready(function () {
     var zipcodeInput = $("#zipcodeInput");
     var usCity = $("#cityInput");
 
-
+    //this is for the welcome and disclaimer
     $(".modal").addClass("is-active");
 
     $(".delete").click(function () {
@@ -24,6 +24,18 @@ $(document).ready(function () {
     $("#userUnderstands").click(function () {
         $(".modal").removeClass("is-active");
     });
+
+    //this is for the current date and forecast dates
+    var momentDates = moment().format("MMMM Do YYYY")
+    $("#currentDate").append(momentDates);
+
+    for (i = 1; i < 6; i++) {
+        var addDay = moment().add(i, 'days');
+        console.log(addDay.format("MMMM Do YYYY"));
+
+        $("#day" + i + "Date").append(addDay.format("MMMM Do YYYY"));
+
+    };
 
     //I just wanted to fade the header for fun. --CL
     $(window).on('scroll', function () {

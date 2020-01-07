@@ -257,7 +257,7 @@
                     </div>
                 </div>
                 <!--For Links to appear after state is clicked-->
-                <div class="tile is-parent is-3" id="infoBox">
+                <div class="tile is-parent is-2" id="infoBox">
                     <div class="content">
                         <p class="title">Links to Public Land:</p>
                         <div class="content" id="linksBox">
@@ -275,108 +275,112 @@
 
             <!--This is where the user inputs their city/zip for weather.-->
             <div class="tile is-parent">
-                <article class="tile is-parent notification is-warning is-3" id="searchBox">
-                    <p class="title">Weather Search</p>
-                    <div id="searchBoxForm">
-                        <div id="searchSpecs">
-                            <label class="label is-medium">City</label>
-                            <!--Input field for City-->
-                            <div class="control">
-                                <input class="input" type="text" placeholder="City" id="cityInput">
+                <article class="tile is-parent notification is-warning is-1" id="searchBox">
+                    <div class="content">
+                        <p id="searchTitle">Weather Search</p>
+                        <div id="searchBoxForm">
+                            <div id="searchSpecs">
+                                <label class="label is-medium">City</label>
+                                <!--Input field for City-->
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="City" id="cityInput">
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <label class="label is-medium">Or</label>
-                        </div>
-                        <!--Input fields for Zipcode.-->
-                        <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                                <input class="input is-normal" id="zipcodeInput" maxlength="5" type="text"
-                                    placeholder="Zipcode">
+                            <div>
+                                <label class="label is-medium">Or</label>
                             </div>
-                        </div>
-                        <!--Submit button to start the on click function in Javascript. CL-->
-                        <div class="field is-grouped is-grouped-right">
-                            <p class="control" id="submitBtn">
-                                <a class="button is-primary">
-                                    Submit
-                                </a>
-                            </p>
-                            <!--The clear button will clear the input boxes. CL-->
-                            <p class="control" id="clearBtn">
-                                <a class="button is-light">
-                                    Clear
-                                </a>
-                            </p>
+                            <!--Input fields for Zipcode.-->
+                            <div class="field">
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-normal" id="zipcodeInput" maxlength="5" type="text"
+                                        placeholder="Zipcode">
+                                </div>
+                            </div>
+                            <!--Submit button to start the on click function in Javascript. CL-->
+                            <div class="field is-grouped is-grouped-right">
+                                <p class="control" id="submitBtn">
+                                    <a class="button is-primary">
+                                        Submit
+                                    </a>
+                                </p>
+                                <!--The clear button will clear the input boxes. CL-->
+                                <p class="control" id="clearBtn">
+                                    <a class="button is-light">
+                                        Clear
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="tile is-parent notification is-danger is-8" id="weatherBox">
-                    <!--We can dynamically append the city name here.-->
-                    <p class="title" id="cityForecast"></p>
-                    <div class="columns is-multiline">
-                        <!-- Content -->
-                        <div class="column" id="currentCityWeather">
-                            <figure class="image">
-                                <i id="currentIcon"></i></figure>
-                            <h6 id="currentDate"></h6>
-                            <h1 class="weatherTemp has-text-centered is-size-2" id="currentTemp">
-                                <!--Add temperature here!-->
-                            </h1>
-                            <h3 class="weatherCondition has-text-centered is-size-5" id="currentCondition">
-                                <!--Replace text with string that tells you conditions, like, windy, clear, sunny, stormy-->
-                                Current weather
-                            </h3>
-                        </div>
-                        <div class="column" id="day1Forecast">
-                            <figure class="image">
-                                <i id="day1Icon"></i></figure>
-                            <h6 id="day1Date"></h6>
-                            <h1 class="weatherTemp has-text-centered is-size-2" id="day1Temp">
-                            </h1>
-                            <h3 class="weatherCondition has-text-centered is-size-5" id="day1Condition">
-                                Day 1 weather
-                            </h3>
-                        </div>
-                        <div class="column" id="day2Forecast">
-                            <figure class="image">
-                                <i id="day2Icon"></i></figure>
-                            <h6 id="day2Date"></h6>
-                            <h1 class="weatherTemp has-text-centered is-size-2" id="day2Temp">
-                            </h1>
-                            <h3 class="weatherCondition has-text-centered is-size-5" id="day2Condition">
-                                Day 2 weather
-                            </h3>
-                        </div>
-                        <div class="column" id="day3Forecast">
-                            <figure class="image">
-                                <i id="day3Icon"></i></figure>
-                            <h6 id="day3Date"></h6>
-                            <h1 class="weatherTemp has-text-centered is-size-2" id="day3Temp">
-                            </h1>
-                            <h3 class="weatherCondition has-text-centered is-size-5" id="day3Condition">
-                                Day 3 weather
-                            </h3>
-                        </div>
-                        <div class="column" id="day4Forecast">
-                            <figure class="image">
-                                <i id="day4Icon"></i></figure>
-                            <h6 id="day4Date"></h6>
-                            <h1 class="weatherTemp has-text-centered is-size-2" id="day4Temp">
-                            </h1>
-                            <h3 class="weatherCondition has-text-centered is-size-5" id="day4Condition">
-                                Day 4 weather
-                            </h3>
-                        </div>
-                        <div class="column" id="day5Forecast">
-                            <figure class="image">
-                                <i id="day5Icon"></i></figure>
-                            <h6 id="day5Date"></h6>
-                            <h1 class="weatherTemp has-text-centered is-size-2" id="day5Temp">
-                            </h1>
-                            <h3 class="weatherCondition has-text-centered is-size-5" id="day5Condition">
-                                Day 5 weather
-                            </h3>
+                <article class="tile is-parent notification is-danger is-9" id="weatherBox">
+                    <div class="content">
+                        <!--We can dynamically append the city name here.-->
+                        <p class="title" id="cityForecast"></p>
+                        <div class="columns is-multiline">
+                            <!-- Content -->
+                            <div class="column" id="currentCityWeather">
+                                <figure class="image">
+                                    <i id="currentIcon"></i></figure>
+                                <h6 id="currentDate"></h6>
+                                <h1 class="weatherTemp has-text-centered is-size-2" id="currentTemp">
+                                    <!--Add temperature here!-->
+                                </h1>
+                                <h3 class="weatherCondition has-text-centered is-size-5" id="currentCondition">
+                                    <!--Replace text with string that tells you conditions, like, windy, clear, sunny, stormy-->
+                                    Current weather
+                                </h3>
+                            </div>
+                            <div class="column" id="day1Forecast">
+                                <figure class="image">
+                                    <i id="day1Icon"></i></figure>
+                                <h6 id="day1Date"></h6>
+                                <h1 class="weatherTemp has-text-centered is-size-2" id="day1Temp">
+                                </h1>
+                                <h3 class="weatherCondition has-text-centered is-size-5" id="day1Condition">
+                                    Day 1 weather
+                                </h3>
+                            </div>
+                            <div class="column" id="day2Forecast">
+                                <figure class="image">
+                                    <i id="day2Icon"></i></figure>
+                                <h6 id="day2Date"></h6>
+                                <h1 class="weatherTemp has-text-centered is-size-2" id="day2Temp">
+                                </h1>
+                                <h3 class="weatherCondition has-text-centered is-size-5" id="day2Condition">
+                                    Day 2 weather
+                                </h3>
+                            </div>
+                            <div class="column" id="day3Forecast">
+                                <figure class="image">
+                                    <i id="day3Icon"></i></figure>
+                                <h6 id="day3Date"></h6>
+                                <h1 class="weatherTemp has-text-centered is-size-2" id="day3Temp">
+                                </h1>
+                                <h3 class="weatherCondition has-text-centered is-size-5" id="day3Condition">
+                                    Day 3 weather
+                                </h3>
+                            </div>
+                            <div class="column" id="day4Forecast">
+                                <figure class="image">
+                                    <i id="day4Icon"></i></figure>
+                                <h6 id="day4Date"></h6>
+                                <h1 class="weatherTemp has-text-centered is-size-2" id="day4Temp">
+                                </h1>
+                                <h3 class="weatherCondition has-text-centered is-size-5" id="day4Condition">
+                                    Day 4 weather
+                                </h3>
+                            </div>
+                            <div class="column" id="day5Forecast">
+                                <figure class="image">
+                                    <i id="day5Icon"></i></figure>
+                                <h6 id="day5Date"></h6>
+                                <h1 class="weatherTemp has-text-centered is-size-2" id="day5Temp">
+                                </h1>
+                                <h3 class="weatherCondition has-text-centered is-size-5" id="day5Condition">
+                                    Day 5 weather
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </article>
