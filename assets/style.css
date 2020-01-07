@@ -164,8 +164,7 @@ h6 {
 }
 
 #searchBoxForm {
-    margin-top: 20%;
-    padding-right: 10px;
+    width: 90%;
 }
 
 #mapsBox {
@@ -208,13 +207,8 @@ a {
     color: #ECA72C;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-li {
-    color: #F6F7F8;
-    list-style-type:none;
+.field.is-grouped.is-grouped-right {
+    padding-left: 15px;
 }
 
 .weatherTemp {
@@ -292,6 +286,9 @@ clickable map css */
     }
     .field.is-grouped {
         flex-wrap: wrap;
+    }
+    .field.is-grouped.is-grouped-right {
+        padding-left: 15px;
     }
     #currentCityWeather {
         border: none;
