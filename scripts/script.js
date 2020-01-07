@@ -848,7 +848,7 @@ $(document).ready(function () {
 
     // RHODE ISLAND -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
 
-    $("#RI, .RI-name").on('click', function() {
+    $("#RI, .RI-btn").on('click', function() {
         aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
         aTag2.innerText = "National Forest Map";
         aTag3.setAttribute('href', "http://www.riparks.com/");
