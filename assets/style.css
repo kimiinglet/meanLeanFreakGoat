@@ -4,7 +4,6 @@ https://bulma.io/documentation/
 https://bulma.io/alternative-to-bootstrap/
 */
 
-
 body {
     background: url("images/connectwork-red.jpg");
 }
@@ -31,7 +30,7 @@ body {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
-  
+
   /* The Close Button */
   .close {
     color: #F6F7F8;
