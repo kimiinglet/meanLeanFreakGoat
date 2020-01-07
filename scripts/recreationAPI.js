@@ -1,4 +1,3 @@
-var search = "fishing";
 var redirectHelp = "https://cors-ut-bootcamp.herokuapp.com/";
 var queryURL = redirectHelp + "ridb.recreation.gov/api/v1/activities?limit=5&offset=0";
 
