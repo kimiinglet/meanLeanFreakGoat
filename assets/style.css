@@ -47,6 +47,16 @@ body {
     cursor: pointer;
   }
 
+.hero {
+    position: relative;
+}
+
+#creditHero {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 i {
     font-size: 3rem;
 }
@@ -162,6 +172,7 @@ h6 {
 }
 
 #footerTxt {
+    font-family: 'Montserrat', serif;
     color: #F6F7F8;
 }
 
@@ -171,8 +182,14 @@ a {
     font-size: 1.2rem;
 }
 
+#names {
+    font-family: 'Montserrat', serif;
+    color: #ECA72C;
+}
+
 ul {
-    margin: 0;
+    list-style: none;
+    padding-left: 0;
 }
 li {
     color: #F6F7F8;
