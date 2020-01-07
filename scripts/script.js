@@ -11,18 +11,18 @@ $(document).ready(function () {
     var usCity = $("#cityInput");
 
     //this is for the welcome and disclaimer
-    $(".modal").addClass("is-active");
+    $("#welcomeModal").addClass("is-active");
 
     $(".delete").click(function () {
-        $(".modal").removeClass("is-active");
+        $("#welcomeModal").removeClass("is-active");
     });
 
     $("#canceled").click(function () {
-        $(".modal").removeClass("is-active");
+        $("#welcomeModal").removeClass("is-active");
     });
 
     $("#userUnderstands").click(function () {
-        $(".modal").removeClass("is-active");
+        $("#welcomeModal").removeClass("is-active");
     });
 
     //this is for the current date and forecast dates
@@ -134,11 +134,24 @@ $(document).ready(function () {
 
     //when you click on submit or press enter, run this callback function
     function callback() {
-        //runs function queryCurrentWeather with this newly assigned currentWeather
-        queryCurrentWeather(usCity[0].value || zipcodeInput[0].value);
-        //runs forecast function with the newly assigned queryWeather
-        forecast(usCity[0].value || zipcodeInput[0].value);
-    }
+        const zipCodeRegex = /^\d{5}$/;
+        if (zipCodeRegex.test(zipcodeInput[0].value) === true) {
+            //runs function queryCurrentWeather with this newly assigned currentWeather
+            queryCurrentWeather(usCity[0].value || zipcodeInput[0].value);
+            //runs forecast function with the newly assigned queryWeather
+            forecast(usCity[0].value || zipcodeInput[0].value);
+        } else {
+            $("#invalidZip").addClass("is-active");
+
+            $("#canceled2").click(function () {
+                $("#invalidZip").removeClass("is-active");
+            });
+
+            $("#userTriesAgain").click(function () {
+                $("#invalidZip").removeClass("is-active");
+            });
+        }
+    };
 
     submitButton.click(function () {
         callback();
