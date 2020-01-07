@@ -4,7 +4,6 @@ https://bulma.io/documentation/
 https://bulma.io/alternative-to-bootstrap/
 */
 
-
 body {
     background: url("images/connectwork-red.jpg");
 }
@@ -25,13 +24,35 @@ body {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #F6F7F8;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
-  
+
+  .modal-card-foot, .modal-card-head {
+    background-color: #0f0e0d;
+    border: none;
+  }
+
+  .modal-card-title {
+      color: #F6F7F8;
+      font-family: 'Baskervville', serif;
+      font-size: 2rem;
+  }
+
+  .modalLink {
+      color: #ECA72C;
+  }
+
+  .modal-card-body {
+      background: url("images/tadeusz-lakota-I-ti5nLU2Cc-unsplash.jpg");
+      background-size: 100%;
+      color: #F6F7F8;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+  }
+
   /* The Close Button */
   .close {
     color: #F6F7F8;
@@ -47,8 +68,24 @@ body {
     cursor: pointer;
   }
 
+.hero {
+    position: relative;
+}
+
+#creditHero {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 i {
-    font-size: xx-large;
+    font-size: 3rem;
+}
+
+.label.is-medium {
+    font-family: 'Baskervville', serif;
+    font-size: 1.7rem;
+    color: #44355B;
 }
 
 #wanderDogTitle {
@@ -61,14 +98,34 @@ i {
     text-align: center;
 }
 
-#wanderDogSlogan p {
+#wanderDogSlogan {
     font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #F6F7F8 !important;
+    font-style: italic;
+    text-align: center;
 }
 
 .title {
     color: #F6F7F8;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
+    word-break: keep-all;
+}
+
+#searchTitle {
+    color: #44355B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    word-break: keep-all;
+    font-size: 2rem;
+}
+
+.content {
+    margin: 0 auto;
 }
 
 .subtitle {
@@ -103,6 +160,12 @@ i {
 #searchBox {
     background-color: #F6F7F8;
     margin: 5px;
+    box-sizing: border-box;
+}
+
+#searchBoxForm {
+    margin-top: 20%;
+    padding-right: 10px;
 }
 
 #mapsBox {
@@ -130,6 +193,7 @@ i {
 }
 
 #footerTxt {
+    font-family: 'Montserrat', serif;
     color: #F6F7F8;
 }
 
@@ -139,8 +203,14 @@ a {
     font-size: 1.2rem;
 }
 
+#names {
+    font-family: 'Montserrat', serif;
+    color: #ECA72C;
+}
+
 ul {
-    margin: 0;
+    list-style: none;
+    padding-left: 0;
 }
 li {
     color: #F6F7F8;
@@ -149,10 +219,20 @@ li {
 
 .weatherTemp {
     font-family: 'Baskervville', serif;
+    color: #F6F7F8 !important;
 }
 
 .weatherCondition {
     font-family: 'Montserrat', sans-serif;
+    color: #F6F7F8 !important;
+}
+
+.tile.is-2 {
+    flex: auto !important;
+}
+
+.tile.is-1 {
+    flex: auto !important;
 }
 
 /* 
