@@ -1,5 +1,5 @@
 var redirectHelp = "https://cors-ut-bootcamp.herokuapp.com/";
-var queryURL = redirectHelp + "ridb.recreation.gov/api/v1/activities?limit=5&offset=0";
+var queryURL = redirectHelp + "ridb.recreation.gov/api/v1/activities?query=campinglimit=5&offset=0";
 
 $.ajax({
     url: queryURL,
