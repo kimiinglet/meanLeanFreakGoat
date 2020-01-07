@@ -270,6 +270,12 @@ clickable map css */
 
 /* Above is the map */
 
+/* text on states */
+.Texas {
+    color: black;
+    z-index: 0.75;
+}
+
 
 @media screen and (max-width: 768px) {
     body {
