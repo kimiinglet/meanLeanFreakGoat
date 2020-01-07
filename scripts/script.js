@@ -847,20 +847,30 @@ $(document).ready(function () {
 
 
     // RHODE ISLAND -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#RI').on('click', function () {
+
+    $("#RI, .RI-name").on('click', function() {
+        aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
+        aTag2.innerText = "National Forest Map";
+        aTag3.setAttribute('href', "http://www.riparks.com/");
+        aTag3.innerText = "Rhode Island State Parks";
         aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
         aTag.innerText = "Rhode Island BLM";
     });
 
-    $('#RI').on('click', function () {
-        aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
-        aTag2.innerText = "National Forest Map";
-    });
+    // $('#RI').on('click', function () {
+    //     aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
+    //     aTag.innerText = "Rhode Island BLM";
+    // });
 
-    $('#RI').on('click', function () {
-        aTag3.setAttribute('href', "http://www.riparks.com/");
-        aTag3.innerText = "Rhode Island State Parks";
-    });
+    // $('#RI').on('click', function () {
+    //     aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
+    //     aTag2.innerText = "National Forest Map";
+    // });
+
+    // $('#RI').on('click', function () {
+    //     aTag3.setAttribute('href', "http://www.riparks.com/");
+    //     aTag3.innerText = "Rhode Island State Parks";
+    // });
 
 
 
