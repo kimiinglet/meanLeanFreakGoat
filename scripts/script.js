@@ -81,7 +81,7 @@ $(document).ready(function () {
 
     function forecast(cityName) {
         $.ajax({
-            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + (cityName || zipcodeInput[0].value) + ",us&units=imperial&appid=" + weatherKey,
+            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + (cityName) + ",us&units=imperial&appid=" + weatherKey,
             method: "GET"
         }).then(function (response) {
             console.log(response);
@@ -135,11 +135,15 @@ $(document).ready(function () {
     //when you click on submit or press enter, run this callback function
     function callback() {
         const zipCodeRegex = /^\d{5}$/;
-        if (zipCodeRegex.test(zipcodeInput[0].value) === true) {
+        if (usCity.val() != "") {
+            queryCurrentWeather(usCity.val());
+            forecast(usCity.val());
+        }
+        else if (zipCodeRegex.test(zipcodeInput[0].value) === true) {
             //runs function queryCurrentWeather with this newly assigned currentWeather
-            queryCurrentWeather(usCity[0].value || zipcodeInput[0].value);
+            queryCurrentWeather(zipcodeInput[0].value);
             //runs forecast function with the newly assigned queryWeather
-            forecast(usCity[0].value || zipcodeInput[0].value);
+            forecast(zipcodeInput[0].value);
         } else {
             $("#invalidZip").addClass("is-active");
 
