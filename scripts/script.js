@@ -269,7 +269,7 @@ $(document).ready(function () {
 
 
     // CONNECTICUT -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#CT, .CT-btn').on('click', function () {
+    $('#CT, #CT-btn').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/office/northeastern-states");
         aTag.innerText = "Connecticut BLM";
         aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
@@ -279,7 +279,7 @@ $(document).ready(function () {
     });
 
     // DELAWARE -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#DE, .DE-btn').on('click', function () {
+    $('#DE, #DE-btn').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/office/northeastern-states");
         aTag.innerText = "Delaware BLM";
         aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
@@ -424,7 +424,7 @@ $(document).ready(function () {
 
 
     // MARYLAND -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#MD, .MD-btn').on('click', function () {
+    $('#MD, #MD-btn').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
         aTag.innerText = "Maryland BLM";
         aTag2.setAttribute('href', "https://dnr.maryland.gov/Publiclands/Pages/parkmap.aspx");
@@ -436,7 +436,7 @@ $(document).ready(function () {
     });
 
     // MASSACHUSETTS -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#MA, .MA-btn').on('click', function () {
+    $('#MA, #MA-btn').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
         aTag.innerText = "Massachusetts BLM";
         aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
@@ -534,7 +534,7 @@ $(document).ready(function () {
 
 
     // NEW HAMPSHIRE -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#NH, .NH-btn').on('click', function () {
+    $('#NH, #NH-btn').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
         aTag.innerText = "New Hampshire BLM";
         aTag2.setAttribute('href', "https://www.fs.usda.gov/whitemountain");
@@ -546,7 +546,7 @@ $(document).ready(function () {
 
 
     // NEW JERSEY -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#NJ, .NJ-btn').on('click', function () {
+    $('#NJ, #NJ-btn').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
         aTag.innerText = "New Jersey BLM";
         aTag2.setAttribute('href', "https://www.state.nj.us/dep/parksandforests/");
@@ -656,7 +656,7 @@ $(document).ready(function () {
 
     // RHODE ISLAND -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
 
-    $("#RI, .RI-btn").on('click', function () {
+    $("#RI, #RI-btn").on('click', function () {
         aTag2.setAttribute('href', "https://www.fs.fed.us/ivm/");
         aTag2.innerText = "National Forest Map";
         aTag3.setAttribute('href', "http://www.riparks.com/");
@@ -721,7 +721,7 @@ $(document).ready(function () {
 
     });
 
- 
+
 
 
 
@@ -741,7 +741,7 @@ $(document).ready(function () {
 
 
     // VERMONT -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
-    $('#VT, .VT-btn').on('click', function () {
+    $('#VT, #VT-btn').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
         aTag.innerText = "Vermont BLM";
         aTag2.setAttribute('href', "https://www.fs.usda.gov/wps/portal/fsinternet/cs/main/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zijQwgwNHCwN_DI8zPwBcqYKBfkO2oCADIwpjI/?pname=Green%20Mountain-%20Home&navtype=BROWSEBYSUBJECT&ss=110920&pnavid=null&navid=091000000000000&cid=FSE_003853");
