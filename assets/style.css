@@ -5,7 +5,10 @@ https://bulma.io/alternative-to-bootstrap/
 */
 
 body {
-    background: url("images/connectwork-red.jpg");
+    background: url("images/jf-brou-915UJQaxtrk-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* The Modal (background) */
@@ -90,7 +93,7 @@ i {
 .label.is-medium {
     font-family: 'Baskervville', serif;
     font-size: 1.7rem;
-    color: #44355B;
+    color: #F6F7F8;
 }
 
 #wanderDogTitle {
@@ -144,7 +147,7 @@ h6 {
 }
 
 #searchTitle {
-    color: #44355B;
+    color: #F6F7F8;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     word-break: keep-all;
@@ -176,16 +179,15 @@ h6 {
 
 #infoBox {
     padding-left: 10px;
-    background-color: #FF3366;
-    border-radius: 5px;
-    color: #ECA72C;
+    background-color: rgba(19, 19, 19, 0.795);
+    color: #F6F7F8;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     margin: 5px;
 }
 
 #searchBox {
-    background-color: #F6F7F8;
+    background-color: rgba(19, 19, 19, 0.795);
     margin: 5px;
     box-sizing: border-box;
 }
@@ -195,9 +197,9 @@ h6 {
 }
 
 #mapsBox {
-    background-color: #44355B;
+    background-color: rgba(19, 19, 19, 0.795);
     position: relative;
-    border-radius: 5px;
+    
     margin: 5px;
 }
 
@@ -206,12 +208,8 @@ h6 {
 }
 
 #weatherBox {
-    background-color: #ECA72C;
+    background-color: rgba(19, 19, 19, 0.795);
     margin: 5px;
-}
-
-#currentCityWeather {
-    border-right: #44355B dashed 1px;
 }
 
 .footer {
@@ -219,8 +217,9 @@ h6 {
 }
 
 #footerTxt {
+    background-color: #F6F7F8;
     font-family: 'Montserrat', serif;
-    color: #F6F7F8;
+    color: #0f0e0d;
 }
 
 a {
@@ -281,7 +280,6 @@ clickable map css */
     float: right;
     z-index: 1;
     background-color: #F6F7F8;
-    border-radius: 5px;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
