@@ -17,6 +17,7 @@ $.ajax({
     // console.log(response.RECDATA);
     // console.log(response.RECDATA[0].FacilityID);
 
+
     // Loop thru results and grab the ALL the Facility ID #s
     var recData = response.RECDATA;
     for (var i = 0; i < recData.length; i++) {
@@ -35,12 +36,14 @@ $.ajax({
             // console.log(response.RECDATA);
 
             if (response.RECDATA.length >= 1) {
-                console.log(response.RECDATA);
-                // var campGrounds = response.RECDATA;
-                // for (var i = 0; i < campGrounds.length; i++)
+                // console.log(response.RECDATA);
+                var campGrounds = response.RECDATA;
+
+                for (var i = 0; i < campGrounds.length; i++) {
+                    console.log(campGrounds[i].ATTRIBUTES);
+
+                }
             }
         });
-
-
     }
 })
