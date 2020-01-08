@@ -114,6 +114,28 @@ h6 {
     text-align: center;
 }
 
+.buttonGroup button {
+    display: block;
+}
+
+.buttonGroup {
+    position: absolute;
+    right: 1%;
+    top: 40%;
+}
+
+.tinyStatesBtn {
+    margin: 5px;
+    border: none;
+}
+
+.tinyStatesBtn:hover {
+    background-color: #FF3366;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
 .title {
     color: #F6F7F8;
     font-family: 'Montserrat', sans-serif;
@@ -280,6 +302,15 @@ clickable map css */
   @media screen and (max-width: 640px) {
     body {
       text-align: center;
+    }
+    .buttonGroup button {
+        display: auto;
+    }
+    .buttonGroup {
+        position: relative;
+    }
+    .tinyStatesBtn {
+        display: inline-block !important;
     }
     li {
         text-align: left;
