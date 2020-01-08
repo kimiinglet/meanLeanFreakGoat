@@ -4,7 +4,6 @@ https://bulma.io/documentation/
 https://bulma.io/alternative-to-bootstrap/
 */
 
-
 body {
     background: url("images/connectwork-red.jpg");
 }
@@ -25,13 +24,35 @@ body {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #F6F7F8;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
-  
+
+  .modal-card-foot, .modal-card-head {
+    background-color: #0f0e0d;
+    border: none;
+  }
+
+  .modal-card-title {
+      color: #F6F7F8;
+      font-family: 'Baskervville', serif;
+      font-size: 2rem;
+  }
+
+  .modalLink {
+      color: #ECA72C;
+  }
+
+  .modal-card-body {
+      background: url("images/tadeusz-lakota-I-ti5nLU2Cc-unsplash.jpg");
+      background-size: 100%;
+      color: #F6F7F8;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+  }
+
   /* The Close Button */
   .close {
     color: #F6F7F8;
@@ -45,6 +66,11 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  #modalPrompt {
+      color: #F6F7F8;
+      font-size: 1rem;
   }
 
 .hero {
@@ -143,8 +169,7 @@ h6 {
 }
 
 #searchBoxForm {
-    margin-top: 20%;
-    padding-right: 10px;
+    width: 90%;
 }
 
 #mapsBox {
@@ -187,13 +212,8 @@ a {
     color: #ECA72C;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-li {
-    color: #F6F7F8;
-    list-style-type:none;
+.field.is-grouped.is-grouped-right {
+    padding-left: 15px;
 }
 
 .weatherTemp {
@@ -221,7 +241,7 @@ clickable map css */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   path:hover, circle:hover {
     stroke: #002868 !important;
@@ -250,6 +270,7 @@ clickable map css */
 /* Above is the map */
 
 
+
 @media screen and (max-width: 768px) {
     body {
       text-align: left;
@@ -271,6 +292,9 @@ clickable map css */
     }
     .field.is-grouped {
         flex-wrap: wrap;
+    }
+    .field.is-grouped.is-grouped-right {
+        padding-left: 15px;
     }
     #currentCityWeather {
         border: none;
