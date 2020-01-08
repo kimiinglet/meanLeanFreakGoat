@@ -38,11 +38,30 @@ $.ajax({
             if (response.RECDATA.length >= 1) {
                 // console.log(response.RECDATA);
                 var campGrounds = response.RECDATA;
-
+                if (!campGrounds) {
+                    return;
+                }
                 for (var i = 0; i < campGrounds.length; i++) {
                     console.log(campGrounds[i].ATTRIBUTES);
+                    console.log("CHECK");
+                    if (campGrounds[i].ATTRIBUTES) {
+                        // var allowed = campGrounds[i].ATTRIBUTES.map(a => a.AttributeName).includes("Pets Allowed");
+                        // console.log(allowed);
+                        var attributes = campGrounds[i].ATTRIBUTES;
+                        var petsAllowed = false;
+                        for (var j = 0; j < attributes.length; j++) {
+                            if (attributes[j].AttributeName === "Pets Allowed" && attributes[j].AttributeValue === "Yes") {
+                                petsAllowed = true;
+                                break;
+                            }
+                        }
+
+                        // Does this place allow pets or not
+                        console.log(petsAllowed);
+                    }
 
                 }
+
             }
         });
     }
