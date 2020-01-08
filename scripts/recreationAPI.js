@@ -1,7 +1,9 @@
+// var stateClick = $(this).on('click', function () {
+console.log(this)
 //CORS 
 var redirectHelp = "https://cors-ut-bootcamp.herokuapp.com/";
 // API Url for Facilities in TX
-var queryURL = redirectHelp + "ridb.recreation.gov/api/v1/facilities?limit=50&state=CO";
+var queryURL = redirectHelp + "ridb.recreation.gov/api/v1/facilities?limit=50&state=CO"
 
 var cSites = document.getElementById('cSites');
 
@@ -14,7 +16,7 @@ $.ajax({
     method: "GET"
 }).then(function (response) {
     // console.log(response);
-    // console.log(response.RECDATA);
+    console.log(response.RECDATA);
     // console.log(response.RECDATA[0].FacilityID);
 
 
@@ -23,7 +25,7 @@ $.ajax({
     for (var i = 0; i < recData.length; i++) {
         // console.log(recData[i].FacilityID);
         var facID = recData[i].FacilityID;
-
+        var facName = recData[i].FacilityName;
 
         // Uses Facility ID # to display all campsites within Facility
         $.ajax({
@@ -36,14 +38,17 @@ $.ajax({
             // console.log(response.RECDATA);
 
             if (response.RECDATA.length >= 1) {
-                // console.log(response.RECDATA);
+                console.log(response.RECDATA);
                 var campGrounds = response.RECDATA;
                 if (!campGrounds) {
                     return;
                 }
+                var facilityPetsAllowed = false;
                 for (var i = 0; i < campGrounds.length; i++) {
-                    console.log(campGrounds[i].ATTRIBUTES);
-                    console.log("CHECK");
+                    // console.log(campGrounds[i].ATTRIBUTES);
+                    // console.log("CHECK");
+
+
                     if (campGrounds[i].ATTRIBUTES) {
                         // var allowed = campGrounds[i].ATTRIBUTES.map(a => a.AttributeName).includes("Pets Allowed");
                         // console.log(allowed);
@@ -52,17 +57,23 @@ $.ajax({
                         for (var j = 0; j < attributes.length; j++) {
                             if (attributes[j].AttributeName === "Pets Allowed" && attributes[j].AttributeValue === "Yes") {
                                 petsAllowed = true;
+                                facilityPetsAllowed = true;
                                 break;
                             }
                         }
 
                         // Does this place allow pets or not
-                        console.log(petsAllowed);
+                        // console.log(petsAllowed);
+                        // if (facilityPetsAllowed === true) {
+                        //     $('#cSites').append(facName + "-" + campGrounds[i]);
+                        // }
                     }
 
                 }
+
 
             }
         });
     }
 })
+// });
