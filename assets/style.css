@@ -285,21 +285,26 @@ clickable map css */
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
+    margin-top: 5px;
   }
 
 /* Above is the map */
 
-
-
 @media screen and (max-width: 768px) {
     body {
       text-align: left;
+    }
+    #info-box {
+        float: none;
     }
   }
 
   @media screen and (max-width: 640px) {
     body {
       text-align: center;
+    }
+    #info-box {
+        float: none;
     }
     .buttonGroup button {
         display: auto;

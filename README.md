@@ -12,7 +12,8 @@ As dog owners, we wanted to find areas in the US where we can camp/hike with our
 
 ## Wireframe
 
-Please forgive our rough sketch.
+Please forgive our rough sketch. 
+<br>
 <img src="assets/images/wireframe.jpg" width="50%" height="auto">
 
 ## How to use Wanderdog
