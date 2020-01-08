@@ -1,22 +1,33 @@
 # Project meanLeanFreakGoat's Off Leash Location Finder, AKA Wanderdog!
 
-This application draws from public information to obtain free trails, camp grounds, and parks for your 4-legged pooch! Also provides weather data and distance from your location!
+This application draws from public information to obtain free trails, camp grounds, and parks for your 4-legged pooch! Also provides weather data for your location!
 
 ## Getting Started
 
+* [Click Here!](https://kimiinglet.github.io/meanLeanFreakGoat/)
+
 These instructions will help you locate the perfect spot to spend time with your pups.
 
-As a dog owner, I want to find areas in the US where I can camp/hike with my dog off-leash, so that I can spend quality time with my dog and allow my dog to explore nature.
-* [Click Here!](https://kimiinglet.github.io/meanLeanFreakGoat/)
+As dog owners, we wanted to find areas in the US where we can camp/hike with our dogs off-leash, so that we can spend quality time with our dogs and allow them to explore nature.
 
 ## Wireframe
 
+Please forgive our rough sketch.
 <img src="assets/images/wireframe.jpg" width="100%" height="auto">
 
-## Running the search engine
+## How to use Wanderdog
 
-Input City/State OR Zip code for weather.
+<img src="assets/images/Screenshot1.png" width="100%" height="auto">
 Clicking on a state will return results for locations near you.
+
+<img src="assets/images/Screenshot2.png" width="100%" height="auto">
+Input City OR Zip code for weather.
+
+## How Wanderdog works
+We used Recreation's API to return campsites where dogs are allowed. We also searched for state parks and forests where you can visit with your dog off-leash. 
+Please keep in mind:
+ * [Outdoor Ethics](https://lnt.org/) and to 
+ * [Tread Lightly!](https://www.treadlightly.org/)
 
 ## Built With
 
