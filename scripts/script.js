@@ -174,11 +174,6 @@ $(document).ready(function () {
         usCity[0].value = "";
         zipcodeInput[0].value = "";
     });
-
-    //dropdown option linked to clickable map info -- KI
-    $("#stateDropdown").on('submitBtn', function () {
-        $("#g5")
-    });
 });
 
 // Links to Forest Service & BLM

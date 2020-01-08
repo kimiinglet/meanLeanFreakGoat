@@ -130,7 +130,7 @@ h6 {
 }
 
 .tinyStatesBtn:hover {
-    background-color: #FF3366;
+    background-color: #ECA72C;
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -266,10 +266,10 @@ clickable map css */
     height: auto;
   }
   path:hover, circle:hover {
-    stroke: #002868 !important;
+    stroke: #ECA72C !important;
     stroke-width:2px;
     stroke-linejoin: round;
-    fill: #002868 !important;
+    fill: #ECA72C !important;
     cursor: pointer;
   }
   #path67 {
@@ -278,15 +278,13 @@ clickable map css */
     cursor: default;
   }
   #info-box {
-    display: none;
-    top: 0px;
-    left: 0px;
+    float: right;
     z-index: 1;
     background-color: #F6F7F8;
-    border: 2px solid #FF3366;
     border-radius: 5px;
-    padding: 5px;
-    font-family: arial;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
   }
 
 /* Above is the map */
