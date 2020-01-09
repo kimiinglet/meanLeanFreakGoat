@@ -353,6 +353,14 @@ a {
     font-size: 1.2rem;
 }
 
+#contactUs {
+    background-color: rgba(246, 247, 248, 0.616);
+    font-family: 'Raleway', sans-serif;
+    color: #0f0e0d;
+    display: inline-block;
+    padding: 5px;
+}
+
 #names {
     font-family: 'Raleway', sans-serif;
     color: rgb(30, 151, 121);
