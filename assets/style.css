@@ -48,6 +48,7 @@ https://bulma.io/alternative-to-bootstrap/
 
 .content {
     margin: 0 auto;
+    width: 100%;
 }
 
 .subtitle {
