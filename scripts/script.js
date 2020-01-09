@@ -1,13 +1,22 @@
-//==================================================
+//=========================================================
 // WELCOME TO WANDERDOG'S WEATHER SEARCH SCRIPT!
-//==================================================
+//=========================================================
 
 //this key is for openweathermap's API.
 var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 
-//==================================================
-// When the website loads, this function runs.
-//==================================================
+//=======================================================================================
+// When the website loads, (You can search by number and period)
+//      1. Welcome modal pops up.
+//      2. Moment.js pulls current date and appends to weather div.
+//      3. Moment.js pulls current month and changes background image accordingly.
+//      4. Fade hero on user scroll.
+//      5. Function queries current weather.
+//      6. Function queries forecast.
+//      7. Function will show "Invalid zipcode" modal if user info is missing.
+//      8. Add links to links box based on state.
+//      9. Function for clickable map.
+//=======================================================================================
 
 $(document).ready(function () {
 
@@ -16,9 +25,9 @@ $(document).ready(function () {
     var zipcodeInput = $("#zipcodeInput");
     var usCity = $("#cityInput");
 
-    //==================================================
-    // This script pops up a modal with our disclaimer.
-    //==================================================
+    //=========================================================
+    // 1. This script pops up a modal with our disclaimer.
+    //=========================================================
 
     $("#welcomeModal").addClass("is-active");
 
@@ -34,9 +43,9 @@ $(document).ready(function () {
         $("#welcomeModal").removeClass("is-active");
     });
 
-    //==================================================
-    // This script uses Moment.js to pull current date.
-    //==================================================
+    //=========================================================
+    // 2. This script uses Moment.js to pull current date.
+    //=========================================================
 
     var momentDates = moment().format("MMMM Do YYYY")
     $("#currentDate").append(momentDates);
@@ -49,10 +58,10 @@ $(document).ready(function () {
 
     };
 
-    //==================================================
-    // This script uses Moment.js to figure out month
+    //=========================================================
+    // 3. This script uses Moment.js to figure out month
     // and changes background based on month
-    //==================================================
+    //=========================================================
 
     var momentMonth = moment().format("MMMM");
 
@@ -85,9 +94,9 @@ $(document).ready(function () {
         document.body.style.backgroundPosition = "center";
     };
 
-    //==================================================
-    // This function fades the hero on user scroll.
-    //==================================================
+    //=========================================================
+    // 4. This function fades the hero on user scroll.
+    //=========================================================
 
     $(window).on('scroll', function () {
         var header = $(".hero");
@@ -99,7 +108,7 @@ $(document).ready(function () {
     });
 
     //=========================================================
-    // This function queries current weather for a given city.
+    // 5. This function queries current weather for a given city.
     //========================================================= 
 
     function queryCurrentWeather(cityName) {
@@ -136,7 +145,7 @@ $(document).ready(function () {
     queryCurrentWeather("Austin");
 
     //==================================================================
-    // This function grabs the 5 day weather forecast for a given city.
+    // 6. This function grabs the 5 day weather forecast for a given city.
     //==================================================================
     function forecast(cityName) {
         $.ajax({
@@ -195,7 +204,7 @@ $(document).ready(function () {
     forecast("Austin");
 
     //======================================================================
-    // When user clicks Submit or presses the Enter key,
+    // 7. When user clicks Submit or presses the Enter key,
     // function callback is run
     // It first checks for a US City. If there is a city, the code will run.
     // If not, it will check for a zipcode input. 
@@ -250,7 +259,7 @@ $(document).ready(function () {
 
 
     //==================================================================
-    // This is our function that grabs links based on state!
+    // 8. This is our function that grabs links based on state!
     // Links to Forest Service & BLM
     // Links to Forest Service and BLM appear when state is clicked
     // Globally naming variables to add links to the links box.
@@ -776,7 +785,7 @@ $(document).ready(function () {
     });
 
     //==================================================================
-    // Script for clickable map
+    // 9. Script for clickable map
     //==================================================================
     $("path, .tinyStatesBtn").hover(function (e) {
         $('#info-box').css('display', 'block');
