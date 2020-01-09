@@ -3,7 +3,7 @@ console.log(this)
 //CORS 
 var redirectHelp = "https://cors-ut-bootcamp.herokuapp.com/";
 // API Url for Facilities in TX
-var queryURL = redirectHelp + "ridb.recreation.gov/api/v1/facilities?limit=50&state=CO"
+var queryURL = redirectHelp + "ridb.recreation.gov/api/v1/facilities?limit=20&state=ID"
 
 var cSites = document.getElementById('cSites');
 
