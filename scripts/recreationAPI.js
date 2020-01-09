@@ -5,8 +5,6 @@ var cSites = document.getElementById('cSites');
 
 
 
-
-
 //==================================================
 // Event listener for State Map path
 //==================================================
