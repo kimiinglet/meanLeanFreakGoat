@@ -58,16 +58,31 @@ $(document).ready(function () {
 
     console.log(momentMonth);
     if ((momentMonth === "December") || (momentMonth === "January") || (momentMonth === "February")) {
-        document.body.style.background = "url('assets/images/jf-brou-915UJQaxtrk-unsplash.jpg') no-repeat center cover";
+        document.body.style.background = "url('assets/images/jf-brou-915UJQaxtrk-unsplash.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
     }
+
     else if ((momentMonth === "March") || (momentMonth === "April") || (momentMonth === "May")) {
-        document.body.style.background = "url('assets/images/jamie-street-wcO2PWLuQ3U-unsplash.jpg') no-repeat center cover";
+        document.body.style.background = "url('assets/images/jamie-street-wcO2PWLuQ3U-unsplash.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
     }
+
     else if ((momentMonth === "June") || (momentMonth === "July") || (momentMonth === "August")) {
-        document.body.style.background = "url('assets/images/jacob-van-blarcom-lkzjENdWgd8-unsplash.jpg') no-repeat center cover";
+        document.body.style.background = "url('assets/images/ipet-photo-T-0EW-SEbsE-unsplash.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
     }
+
     else if ((momentMonth === "September") || (momentMonth === "October") || (momentMonth === "November")) {
-        document.body.style.background = "url('assets/images/wilfried-santer-f5V0hJY2ohQ-unsplash.jpg') no-repeat center cover";
+        document.body.style.background = "url('assets/images/wilfried-santer-f5V0hJY2ohQ-unsplash.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
     };
 
     //==================================================

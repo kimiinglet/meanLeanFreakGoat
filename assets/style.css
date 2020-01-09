@@ -35,13 +35,6 @@ https://bulma.io/alternative-to-bootstrap/
     =GLOBAL SETTINGS 
    ================== */
 
-body {
-    background: url("images/jf-brou-915UJQaxtrk-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .title {
     color: #F6F7F8;
     font-family: 'Raleway', sans-serif;
