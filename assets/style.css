@@ -237,8 +237,21 @@ path:hover, circle:hover {
     margin: 5px;
 }
 
+a:hover {
+    color: rgb(28, 209, 164);
+}
+
 .tile.is-2 {
     flex: auto !important;
+}
+
+#randoCampTitle {
+    color: #F6F7F8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    word-break: keep-all;
+    font-size: 1rem;
 }
 
 /* =======================
