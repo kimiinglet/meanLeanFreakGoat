@@ -60,4 +60,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-* Thanks to our dogs, Orion, Nox, Koda, Kimber, and Piper. Thank you for being our best friends.
+* Thanks to our dogs, Kimber, Koda, Nox, Orion, and Piper. Thank you for being our best friends.
