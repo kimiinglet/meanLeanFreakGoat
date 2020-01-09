@@ -9,31 +9,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="assets/style.css">
-    <!--doggy favicon!-->
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Welcome to Wanderdog!-->
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Favicon of a dog-->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Google Font= Raleway-->
     <!--weather icons from Erik Flowers-->
+    <!----------------------------------------------------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets\images\weather-icons-master\css\weather-icons.css">
-    <!--links to 2 fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Baskervville|Montserrat&display=swap" rel="stylesheet">
-
-    <style>
-        #alert {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            background-color: #ddd;
-            color: #333;
-            padding: 5px;
-            font-weight: bold;
-        }
-    </style>
-
 </head>
 
-<!--When adding images from Unsplash, you can embed a credit badge into the HTML to credit the photographer. -->
+
 
 <body>
-    <!--Modal pops up so the user can understand what the site is about, and disclaimer-->
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Modal that pops up so the user can understand what the site is about, and disclaimer-->
+    <!----------------------------------------------------------------------------------------------------------->
     <div class="modal" id="welcomeModal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -66,7 +60,9 @@
             </footer>
         </div>
     </div>
-
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Modal that pops up with invalid zipcode-->
+    <!----------------------------------------------------------------------------------------------------------->
     <div class="modal" id="invalidZip">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -91,23 +87,17 @@
                 </h2>
             </div>
         </div>
-        <!-- <a id="creditHero"
-            style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-            href="https://unsplash.com/@fredmarriage?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-            target="_blank" rel="noopener noreferrer"
-            title="Download free do whatever you want high-resolution photos from freddie marriage"><span
-                style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
-                    style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
-                    viewBox="0 0 32 32">
-                    <title>unsplash-logo</title>
-                    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                </svg></span><span style="display:inline-block;padding:2px 3px">Freddie Marriage</span></a> -->
+
     </section>
+    <!----------------------------------------------------------------------------------------------------------->
     <!--This is the content box where all the magic happens.-->
+    <!----------------------------------------------------------------------------------------------------------->
     <div class="tile is-ancestor">
         <div class="tile is-vertical is-10" id="contentBox">
             <div class="tile is-parent">
+                <!------------------------------------------------------------------------------------------------>
                 <!--This tile is for the maps-->
+                <!------------------------------------------------------------------------------------------------>
                 <div class="tile is-parent is-8" id="mapsBox">
                     <div class="clickable-states">
                         <?xml version="1.0" encoding="utf-8"?>
@@ -304,19 +294,28 @@
                         <div id="info-box"></div>
                     </div>
                     <div class="buttonGroup">
-                        <button class="tinyStatesBtn" id="NH-btn" style="width:40px;height:20px" data-info="<div>State: New Hampshire</div><div>Capital: Richmond</div>">NH</button>
-                        <button class="tinyStatesBtn" id="VT-btn" style="width:40px;height:20px" data-info="<div>State: Vermont</div><div>Capital: Montpelier</div>">VT</button>
-                        <button class="tinyStatesBtn" id="RI-btn" style="width:40px;height:20px" data-info="<div>State: Rhode Island</div><div>Capital: Providence</div>">RI</button>
-                        <button class="tinyStatesBtn" id="MA-btn" style="width:40px;height:20px" data-info="<div>State: Massachusetts</div><div>Capital: Boston</div>">MA</button>
-                        <button class="tinyStatesBtn" id="NJ-btn" style="width:40px;height:20px" data-info="<div>State: New Jersey</div><div>Capital: Trenton</div>">NJ</button>
-                        <button class="tinyStatesBtn" id="CT-btn" style="width:40px;height:20px" data-info="<div>State: Connecticut</div><div>Capital: Hartford</div>">CT</button>
-                        <button class="tinyStatesBtn" id="MD-btn" style="width:40px;height:20px" data-info="<div>State: Maryland</div><div>Capital: Annapolis</div>">MD</button>
-                        <button class="tinyStatesBtn" id="DE-btn" style="width:40px;height:20px" data-info="<div>State: Delaware</div><div>Capital: Dover</div>">DE</button>
+                        <button class="tinyStatesBtn" id="NH-btn" style="width:40px;height:20px"
+                            data-info="<div>State: New Hampshire</div><div>Capital: Richmond</div>">NH</button>
+                        <button class="tinyStatesBtn" id="VT-btn" style="width:40px;height:20px"
+                            data-info="<div>State: Vermont</div><div>Capital: Montpelier</div>">VT</button>
+                        <button class="tinyStatesBtn" id="RI-btn" style="width:40px;height:20px"
+                            data-info="<div>State: Rhode Island</div><div>Capital: Providence</div>">RI</button>
+                        <button class="tinyStatesBtn" id="MA-btn" style="width:40px;height:20px"
+                            data-info="<div>State: Massachusetts</div><div>Capital: Boston</div>">MA</button>
+                        <button class="tinyStatesBtn" id="NJ-btn" style="width:40px;height:20px"
+                            data-info="<div>State: New Jersey</div><div>Capital: Trenton</div>">NJ</button>
+                        <button class="tinyStatesBtn" id="CT-btn" style="width:40px;height:20px"
+                            data-info="<div>State: Connecticut</div><div>Capital: Hartford</div>">CT</button>
+                        <button class="tinyStatesBtn" id="MD-btn" style="width:40px;height:20px"
+                            data-info="<div>State: Maryland</div><div>Capital: Annapolis</div>">MD</button>
+                        <button class="tinyStatesBtn" id="DE-btn" style="width:40px;height:20px"
+                            data-info="<div>State: Delaware</div><div>Capital: Dover</div>">DE</button>
                     </div>
                 </div>
 
-
+                <!------------------------------------------------------------------------------------------------>
                 <!--For Links to appear after state is clicked-->
+                <!------------------------------------------------------------------------------------------------>
                 <div class="tile is-parent is-2" id="infoBox">
                     <div class="content">
                         <p class="title">Links to Public Land:</p>
@@ -332,7 +331,9 @@
                 </div>
             </div>
 
+            <!------------------------------------------------------------------------------------------------>
             <!--This is where the user inputs their city/zip for weather.-->
+            <!------------------------------------------------------------------------------------------------>
             <div class="tile is-parent">
                 <article class="tile is-parent notification is-warning is-1" id="searchBox">
                     <div class="content">
@@ -372,6 +373,9 @@
                         </div>
                     </div>
                 </article>
+                <!------------------------------------------------------------------------------------------------>
+                <!--This tile is where the weather will populate-->
+                <!------------------------------------------------------------------------------------------------>
                 <article class="tile is-parent notification is-danger is-9" id="weatherBox">
                     <div class="content">
                         <!--We can dynamically append the city name here.-->
@@ -446,6 +450,9 @@
             </div>
         </div>
     </div>
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Footer-->
+    <!----------------------------------------------------------------------------------------------------------->
     <footer class="footer">
         <div class="content has-text-centered">
             <p id="footerTxt">
@@ -454,6 +461,9 @@
             </p>
         </div>
     </footer>
+    <!----------------------------------------------------------------------------------------------------------->
+    <!--Scripts-->
+    <!----------------------------------------------------------------------------------------------------------->
     <script type="text/javascript" src="scripts/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/recreationAPI.js" defer></script>

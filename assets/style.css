@@ -14,11 +14,10 @@ https://bulma.io/alternative-to-bootstrap/
 	3. =HERO!
 	4. =USA STATES BOX
     5. =LINKS BOX
-    6. =FUTURE DIV INFO BOX
-    7. =SEARCH BOX
-    8. =WEATHER BOX
-    9. =FOOTER
-    10. =MEDIA QUERIES
+    6. =SEARCH BOX
+    7. =WEATHER BOX
+    8. =FOOTER
+    9. =MEDIA QUERIES
 */
 
 /* COLORS
@@ -30,6 +29,8 @@ https://bulma.io/alternative-to-bootstrap/
 /* FONTS
 	font-family: 'Raleway', sans-serif;
 */
+
+/*=====================================///=======================================*/
 
 /* ==================
     =GLOBAL SETTINGS 
@@ -238,9 +239,6 @@ path:hover, circle:hover {
 .tile.is-2 {
     flex: auto !important;
 }
-/* ========================
-     =FUTURE DIV INFO BOX 
-   ======================== */
 
 /* =======================
         =SEARCH BOX 
@@ -336,20 +334,20 @@ i {
 
 #footerTxt {
     background-color: rgba(246, 247, 248, 0.616);
-    font-family: 'Montserrat', serif;
+    font-family: 'Raleway', sans-serif;
     color: #0f0e0d;
     display: inline-block;
     padding: 5px;
 }
 
 a {
-    font-family: 'Montserrat', serif;
+    font-family: 'Raleway', sans-serif;
     color: #F6F7F8;
     font-size: 1.2rem;
 }
 
 #names {
-    font-family: 'Montserrat', serif;
+    font-family: 'Raleway', sans-serif;
     color: rgb(30, 151, 121);
 }
 
@@ -357,43 +355,6 @@ a {
 .tile.is-1 {
     flex: auto !important;
 }
-
-/* 
-clickable map css */
-#us-map{
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
-  path:hover, circle:hover {
-    stroke: #ECA72C !important;
-    stroke-width:2px;
-    stroke-linejoin: round;
-    fill: #ECA72C !important;
-    cursor: pointer;
-  }
-  #path67 {
-    fill: none !important;
-    stroke: #A9A9A9 !important;
-    cursor: default;
-  }
-  #info-box {
-    float: right;
-    z-index: 1;
-    background-color: #F6F7F8;
-    border-radius: 5px;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 550;
-    margin-top: 5px;
-    height: 15%;
-    width: 47%;
-    
-  }
-
-/* Above is the map */
 
 /* =======================
         =MEDIA QUERIES 
