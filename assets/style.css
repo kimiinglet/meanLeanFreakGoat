@@ -1,14 +1,69 @@
 /* 
-The CSS framework I'd like to use is this--
+The CSS framework is
 https://bulma.io/documentation/
 https://bulma.io/alternative-to-bootstrap/
 */
 
+/* ===========================
+    WELCOME TO WANDERDOG CSS 
+   =========================== */
+
+/* CSS DIRECTORY
+	1. =GLOBAL SETTINGS
+	2. =MODALS
+	3. =HERO!
+	4. =USA STATES BOX
+    5. =LINKS BOX
+    6. =FUTURE DIV INFO BOX
+    7. =SEARCH BOX
+    8. =WEATHER BOX
+    9. =FOOTER
+    10. =MEDIA QUERIES
+*/
+
+/* COLORS
+	- default body text-WHITE     color: #F6F7F8;
+	- link text-GREEN             rgb(28, 209, 164);
+	- background div color-BLACK  rgba(19, 19, 19, 0.795);
+*/
+
+/* FONTS
+	font-family: 'Raleway', sans-serif;
+*/
+
+/* ==================
+    =GLOBAL SETTINGS 
+   ================== */
+
 body {
-    background: url("images/connectwork-red.jpg");
+    background: url("images/jf-brou-915UJQaxtrk-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* The Modal (background) */
+.title {
+    color: #F6F7F8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    word-break: keep-all;
+}
+
+#contentBox {
+    margin: 0 auto;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+.subtitle {
+    padding-left: 10%;
+}
+
+/* ===============
+       =MODALS 
+   =============== */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -37,23 +92,23 @@ body {
 
   .modal-card-title {
       color: #F6F7F8;
-      font-family: 'Baskervville', serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 2rem;
   }
 
   .modalLink {
-      color: #ECA72C;
+      color: rgb(28, 209, 164);
   }
 
   .modal-card-body {
       background: url("images/tadeusz-lakota-I-ti5nLU2Cc-unsplash.jpg");
       background-size: 100%;
       color: #F6F7F8;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 1.2rem;
   }
 
-  /* The Close Button */
+  /* The close button for the modal */
   .close {
     color: #F6F7F8;
     float: right;
@@ -73,8 +128,18 @@ body {
       font-size: 1rem;
   }
 
+/* ===============
+        =HERO! 
+   =============== */
 .hero {
     position: relative;
+}
+
+.has-bg-img { 
+    background: url("images/freddie-marriage-w39PTDxKiK8-unsplash.jpg")center center; 
+    background-size:cover; 
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 #creditHero {
@@ -83,18 +148,8 @@ body {
     right: 0;
 }
 
-i {
-    font-size: 3rem;
-}
-
-.label.is-medium {
-    font-family: 'Baskervville', serif;
-    font-size: 1.7rem;
-    color: #44355B;
-}
-
 #wanderDogTitle {
-    font-family: 'Baskervville', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 5rem;
 }
 
@@ -104,14 +159,52 @@ i {
 }
 
 #wanderDogSlogan {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: #F6F7F8 !important;
-    font-style: italic;
-    text-align: center;
+/* =======================
+       =USA STATES BOX 
+   ======================= */
+#us-map{
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+path:hover, circle:hover {
+    stroke: rgb(28, 209, 164) !important;
+    stroke-width:2px;
+    stroke-linejoin: round;
+    fill: rgb(28, 209, 164) !important;
+    cursor: pointer;
+}
+
+#path67 {
+    fill: none !important;
+    stroke: #A9A9A9 !important;
+    cursor: default;
+}
+
+#info-box {
+    float: right;
+    z-index: 1;
+    background-color: #F6F7F8;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 550;
+    margin-top: 5px;
+}
+
+#mapsBox {
+    background-color: rgba(19, 19, 19, 0.795);
+    position: relative;
+    margin: 5px;
+}
+
+.notification a:not(.button):not(.dropdown-item) {
+    text-decoration: none !important;
 }
 
 .buttonGroup button {
@@ -130,97 +223,123 @@ h6 {
 }
 
 .tinyStatesBtn:hover {
-    background-color: #ECA72C;
+    background-color: rgb(28, 209, 164);
     text-decoration: none;
     border: none;
     cursor: pointer;
 }
 
-.title {
+/* ==================
+       =LINKS BOX 
+   ================== */
+
+#infoBox {
+    padding-left: 10px;
+    background-color: rgba(19, 19, 19, 0.795);
     color: #F6F7F8;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    word-break: keep-all;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 5px;
 }
 
+.tile.is-2 {
+    flex: auto !important;
+}
+/* ========================
+     =FUTURE DIV INFO BOX 
+   ======================== */
+
+/* =======================
+        =SEARCH BOX 
+   ======================= */
+
 #searchTitle {
-    color: #44355B;
-    font-family: 'Montserrat', sans-serif;
+    color: #F6F7F8;
+    font-family: 'Raleway', sans-serif;
     font-weight: normal;
     word-break: keep-all;
     font-size: 2rem;
 }
 
-.content {
-    margin: 0 auto;
+.tile.is-1 {
+    flex: auto !important;
 }
 
-.subtitle {
-    padding-left: 10%;
-}
-
-.has-bg-img { 
-    background: url("images/freddie-marriage-w39PTDxKiK8-unsplash.jpg")center center; 
-    background-size:cover; 
-    margin-bottom: 20px;
-    border-radius: 5px;
+.label.is-medium {
+    font-family: 'Raleway', sans-serif;
+    color: #F6F7F8;
 }
 
 #cityInput {
     margin-bottom: 5px;
 }
 
-#contentBox {
-    margin: 0 auto;
-}
-
-#infoBox {
-    padding-left: 10px;
-    background-color: #FF3366;
-    border-radius: 5px;
-    color: #ECA72C;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 5px;
-}
-
 #searchBox {
-    background-color: #F6F7F8;
+    background-color: rgba(19, 19, 19, 0.795);
     margin: 5px;
     box-sizing: border-box;
+    border-radius: 0px;
 }
 
 #searchBoxForm {
     width: 90%;
 }
 
-#mapsBox {
-    background-color: #44355B;
-    position: relative;
-    border-radius: 5px;
-    margin: 5px;
+.input {
+    border-radius: 0px;
 }
 
-.notification a:not(.button):not(.dropdown-item) {
-    text-decoration: none !important;
+.field.is-grouped.is-grouped-right {
+    padding-left: 15px;
 }
+/* ==================
+      =WEATHER BOX 
+   ================== */
 
 #weatherBox {
-    background-color: #ECA72C;
+    background-color: rgba(19, 19, 19, 0.795);
     margin: 5px;
+    border-radius: 0px;
 }
 
-#currentCityWeather {
-    border-right: #44355B dashed 1px;
+h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #F6F7F8 !important;
+    font-style: italic;
+    text-align: center;
+    font-weight: 400 !important;
 }
 
+/* Weather icons */
+i {
+    font-size: 3rem;
+}
+
+.weatherTemp {
+    font-family: 'Raleway', sans-serif;
+    color: #F6F7F8 !important;
+    font-weight: 400 !important;
+}
+
+.weatherCondition {
+    font-family: 'Raleway', sans-serif;
+    color: #F6F7F8 !important;
+    font-weight: 400 !important;
+}
+
+/* =======================
+          =FOOTER 
+   ======================= */
 .footer {
     background: transparent;
 }
 
 #footerTxt {
+    background-color: rgba(246, 247, 248, 0.616);
     font-family: 'Montserrat', serif;
-    color: #F6F7F8;
+    color: #0f0e0d;
+    display: inline-block;
+    padding: 5px;
 }
 
 a {
@@ -231,26 +350,9 @@ a {
 
 #names {
     font-family: 'Montserrat', serif;
-    color: #ECA72C;
+    color: rgb(30, 151, 121);
 }
 
-.field.is-grouped.is-grouped-right {
-    padding-left: 15px;
-}
-
-.weatherTemp {
-    font-family: 'Baskervville', serif;
-    color: #F6F7F8 !important;
-}
-
-.weatherCondition {
-    font-family: 'Montserrat', sans-serif;
-    color: #F6F7F8 !important;
-}
-
-.tile.is-2 {
-    flex: auto !important;
-}
 
 .tile.is-1 {
     flex: auto !important;
@@ -293,6 +395,11 @@ clickable map css */
 
 /* Above is the map */
 
+/* =======================
+        =MEDIA QUERIES 
+   ======================= */
+
+
 @media screen and (max-width: 768px) {
     body {
       text-align: left;
@@ -332,9 +439,5 @@ clickable map css */
     }
     .field.is-grouped.is-grouped-right {
         padding-left: 15px;
-    }
-    #currentCityWeather {
-        border: none;
-        border-bottom: #44355B dashed 1px;
     }
   }
