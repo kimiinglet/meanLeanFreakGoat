@@ -35,13 +35,6 @@ https://bulma.io/alternative-to-bootstrap/
     =GLOBAL SETTINGS 
    ================== */
 
-body {
-    background: url("images/jf-brou-915UJQaxtrk-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .title {
     color: #F6F7F8;
     font-family: 'Raleway', sans-serif;
@@ -268,6 +261,7 @@ path:hover, circle:hover {
 .label.is-medium {
     font-family: 'Raleway', sans-serif;
     color: #F6F7F8;
+    font-weight: 400;
 }
 
 #cityInput {
@@ -287,11 +281,17 @@ path:hover, circle:hover {
 
 .input {
     border-radius: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .field.is-grouped.is-grouped-right {
     padding-left: 15px;
 }
+
+.button {
+    font-family: 'Raleway', sans-serif;
+}
+
 /* ==================
       =WEATHER BOX 
    ================== */
@@ -312,7 +312,7 @@ h6 {
 
 /* Weather icons */
 i {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .weatherTemp {
