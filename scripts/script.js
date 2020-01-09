@@ -1,16 +1,25 @@
-//this key will work on local and website.
+//==================================================
+// WELCOME TO WANDERDOG'S WEATHER SEARCH SCRIPT!
+//==================================================
+
+//this key is for openweathermap's API.
 var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 
-//when you create the queryURLs, you use var Gkey or var weatherKey to replace where the API key is.
+//==================================================
+// When the website loads, this function runs.
+//==================================================
 
 $(document).ready(function () {
-    //add var names here
+
     var submitButton = $("#submitBtn");
     var clearButton = $("#clearBtn");
     var zipcodeInput = $("#zipcodeInput");
     var usCity = $("#cityInput");
 
-    //this is for the welcome and disclaimer
+    //==================================================
+    // This script pops up a modal with our disclaimer.
+    //==================================================
+
     $("#welcomeModal").addClass("is-active");
 
     $(".delete").click(function () {
@@ -25,7 +34,10 @@ $(document).ready(function () {
         $("#welcomeModal").removeClass("is-active");
     });
 
-    //this is for the current date and forecast dates
+    //==================================================
+    // This script uses Moment.js to pull current date.
+    //==================================================
+
     var momentDates = moment().format("MMMM Do YYYY")
     $("#currentDate").append(momentDates);
 
@@ -37,7 +49,10 @@ $(document).ready(function () {
 
     };
 
-    //I just wanted to fade the header for fun. --CL
+    //==================================================
+    // This function fades the hero on user scroll.
+    //==================================================
+
     $(window).on('scroll', function () {
         var header = $(".hero");
         if ($(this).scrollTop() > 50) {
@@ -47,7 +62,9 @@ $(document).ready(function () {
         }
     });
 
-    //when page loads, weather should be default, Austin, TX. This is for current weather! 
+    //=========================================================
+    // This function queries current weather for a given city.
+    //========================================================= 
 
     function queryCurrentWeather(cityName) {
         $.ajax({
@@ -76,9 +93,15 @@ $(document).ready(function () {
         });
     }
 
-    //runs the function queryCurrentWeather
+    //=======================================================================
+    // On page load, the page will query Austin's current weather as default.
+    //=======================================================================
+
     queryCurrentWeather("Austin");
 
+    //==================================================================
+    // This function grabs the 5 day weather forecast for a given city.
+    //==================================================================
     function forecast(cityName) {
         $.ajax({
             url: "https://api.openweathermap.org/data/2.5/forecast?q=" + (cityName) + ",us&units=imperial&appid=" + weatherKey,
@@ -129,10 +152,20 @@ $(document).ready(function () {
         });
     }
 
-    //runs the forecast function
+    //==========================================================
+    // On page load, the page will grab Austin's 5 day forecast.
+    //==========================================================
+
     forecast("Austin");
 
-    //when you click on submit or press enter, run this callback function
+    //======================================================================
+    // When user clicks Submit or presses the Enter key,
+    // function callback is run
+    // It first checks for a US City. If there is a city, the code will run.
+    // If not, it will check for a zipcode input. 
+    // If the zipcode input is valid, then it will search for the weather.
+    // If neither of those conditions are met, an "Invalid!" modal will show.
+    //======================================================================
     function callback() {
         const zipCodeRegex = /^\d{5}$/;
         if (usCity.val() != "") {
@@ -157,6 +190,10 @@ $(document).ready(function () {
         }
     };
 
+    //=======================================================
+    // On enter keypress and on click function that will run
+    // the callback function above.
+    //=======================================================
     submitButton.click(function () {
         callback();
     });
