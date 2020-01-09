@@ -286,6 +286,9 @@ clickable map css */
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
     margin-top: 5px;
+    height: 15%;
+    width: 47%;
+    
   }
 
 /* Above is the map */
