@@ -211,26 +211,31 @@ $(document).ready(function () {
         usCity[0].value = "";
         zipcodeInput[0].value = "";
     });
-});
 
-// Links to Forest Service & BLM
-// Globally naming variables  
-var aTag = document.getElementById('link');
-var aTag2 = document.getElementById('link2');
-var aTag3 = document.getElementById('link3');
-var wTag = document.getElementById('wLink');
 
-$(document).ready(function () {
+    //==================================================================
+    // This is our function that grabs links based on state!
+    // Links to Forest Service & BLM
+    // Links to Forest Service and BLM appear when state is clicked
+    // Globally naming variables to add links to the links box.
+    //==================================================================        
+    var aTag = document.getElementById('link');
+    var aTag2 = document.getElementById('link2');
+    var aTag3 = document.getElementById('link3');
+    var wTag = document.getElementById('wLink');
 
+    //==================================================================
     // WILDERNESS.net - Learn About Wilderness | Appears when ANY state is clicked
+    //==================================================================
     $('#g5').on('click', function () {
         wTag.setAttribute('href', "https://wilderness.net/learn-about-wilderness/default.php");
         wTag.innerText = "US Wilderness Info"
     });
+    //==================================================================
     // Any other links (safety (DOGS MUST YIELD TO HORSE RIDING)) that we want to appear with ALL clicks????
+    //==================================================================
 
-
-    // ALAKSA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
+    // ALASKA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#AK').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/alaska");
         aTag.innerText = "Alaska BLM";
@@ -239,8 +244,6 @@ $(document).ready(function () {
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
     });
-
-
 
     // ALABAMA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#AL').on('click', function () {
@@ -262,8 +265,6 @@ $(document).ready(function () {
         aTag3.innerText = "Arkansas - Ouachita National Forest";
     });
 
-
-
     // ARIZONA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#AZ').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/arizona");
@@ -273,7 +274,6 @@ $(document).ready(function () {
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
     });
-
 
     // CALIFORNIA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#CA').on('click', function () {
@@ -285,8 +285,6 @@ $(document).ready(function () {
         aTag3.innerText = "";
     });
 
-
-
     // COLORADO -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#CO').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/colorado");
@@ -297,8 +295,6 @@ $(document).ready(function () {
         aTag3.innerText = "";
 
     });
-
-
 
     // CONNECTICUT -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#CT, #CT-btn').on('click', function () {
@@ -318,10 +314,7 @@ $(document).ready(function () {
         aTag2.innerText = "Delaware Forest Service";
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
-
     });
-
 
     // FLORIDA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#FL').on('click', function () {
@@ -332,9 +325,7 @@ $(document).ready(function () {
 
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
     });
-
 
     // GEORGIA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#GA').on('click', function () {
@@ -346,7 +337,6 @@ $(document).ready(function () {
         aTag3.innerText = "";
     });
 
-
     // HAWAI'I -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#HI').on('click', function () {
         aTag.setAttribute('href', "https://camping.ehawaii.gov/camping/welcome.html");
@@ -355,9 +345,7 @@ $(document).ready(function () {
         aTag2.innerText = "Hawai'i Forest Service";
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
     });
-
 
     // IDAHO -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#ID').on('click', function () {
@@ -368,7 +356,6 @@ $(document).ready(function () {
 
         aTag3.setAttribute('href', "https://www.fs.usda.gov/boise");
         aTag3.innerText = "Idaho Boise Forest Service";
-
     });
 
     // ILLINOIS -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
@@ -379,9 +366,7 @@ $(document).ready(function () {
         aTag2.innerText = "Illinois Forest Service";
         aTag3.setAttribute('href', "https://www.dnr.illinois.gov/Parks/Pages/default.aspx");
         aTag3.innerText = "Illinois State Parks";
-
     });
-
 
     // INDIANA -- On Clicks That Add Links to Anchor Tags:(link, link2, link3, wLink)
     $('#IN').on('click', function () {
@@ -391,10 +376,7 @@ $(document).ready(function () {
         aTag2.innerText = "Indiana Forest Service";
         aTag3.setAttribute('href', "https://www.in.gov/dnr/parklake/");
         aTag3.innerText = "Indiana State Parks";
-
     });
-
-
 
     // IOWA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#IA').on('click', function () {
@@ -406,7 +388,6 @@ $(document).ready(function () {
         aTag3.innerText = "";
     });
 
-
     // KANSAS -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#KS').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/new-mexico");
@@ -415,9 +396,7 @@ $(document).ready(function () {
         aTag2.innerText = "Kansas Forest Service";
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
     });
-
 
     // KENTUCKY -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#KY').on('click', function () {
@@ -427,10 +406,7 @@ $(document).ready(function () {
         aTag2.innerText = "Kentucky - Daniel Boone NF";
         aTag3.setAttribute('href', "https://www.landbetweenthelakes.us/");
         aTag3.innerText = "Kentucky - Land Between the Lakes NF";
-
     });
-
-
 
     // LOUISIANA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#LA').on('click', function () {
@@ -440,7 +416,6 @@ $(document).ready(function () {
         aTag2.innerText = "Louisiana - Kisatchie National Forest";
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
     });
 
     // MAINE -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
@@ -451,9 +426,7 @@ $(document).ready(function () {
         aTag2.innerText = "Maine - White Mountain National Forest";
         aTag3.setAttribute('href', "https://www.fs.fed.us/ivm/");
         aTag3.innerText = "National Forest Map";
-
     });
-
 
     // MARYLAND -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#MD, #MD-btn').on('click', function () {
@@ -463,8 +436,6 @@ $(document).ready(function () {
         aTag2.innerText = "Maryland State Parks";
         aTag3.setAttribute('href', "https://dnr.maryland.gov/Wildlife/Pages/publiclands/home.aspx");
         aTag3.innerText = "Maryland - Wildlife and Heritage Service";
-
-
     });
 
     // MASSACHUSETTS -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
@@ -475,9 +446,7 @@ $(document).ready(function () {
         aTag2.innerText = "Massachusetts Natioanal Forest";
         aTag3.setAttribute('href', "https://www.mass.gov/guides/guide-to-recreation-in-state-parks");
         aTag3.innerText = "Massachusetts State Parks";
-
     });
-
 
     // MICHIGAN -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#MI').on('click', function () {
@@ -487,10 +456,7 @@ $(document).ready(function () {
         aTag2.innerText = "Michigan - Hiawatha National Forest";
         aTag3.setAttribute('href', "https://www.fs.usda.gov/hmnf/");
         aTag3.innerText = "Michigan - Huron-Mainstee National Forest";
-
     });
-
-
 
     // MINNESOTA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#MN').on('click', function () {
@@ -500,10 +466,7 @@ $(document).ready(function () {
         aTag2.innerText = "Minnesota - Superior National Forest";
         aTag3.setAttribute('href', "https://www.fs.usda.gov/chippewa");
         aTag3.innerText = "Minnesota - Chippewa National Forest";
-
     });
-
-
 
     // MISSISSIPPI -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#MS').on('click', function () {
@@ -513,9 +476,7 @@ $(document).ready(function () {
         aTag2.innerText = "Mississippi National Forests";
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
     });
-
 
     // MISSOURI -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#MO').on('click', function () {
@@ -525,7 +486,6 @@ $(document).ready(function () {
         aTag2.innerText = "Missouri - Mark Twain NF";
         aTag3.setAttribute('href', "https://mostateparks.com/");
         aTag3.innerText = "Missouri State Parks";
-
     });
 
     // MONTANA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
@@ -536,9 +496,7 @@ $(document).ready(function () {
         aTag2.innerText = "Montana - National Forests";
         aTag3.setAttribute('href', "https://wildmontana.org/");
         aTag3.innerText = "Montana Wilderness Association";
-
     });
-
 
     // NEBRASKA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#NE').on('click', function () {
@@ -548,9 +506,7 @@ $(document).ready(function () {
         aTag2.innerText = "Nebraska - National Forests";
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
     });
-
 
     // NEVADA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#NV').on('click', function () {
@@ -560,10 +516,7 @@ $(document).ready(function () {
         aTag2.innerText = "Nevada - Humboldt-Toiyabe NF";
         aTag3.setAttribute('href', "http://parks.nv.gov/");
         aTag3.innerText = "Nevada State Parks";
-
-
     });
-
 
     // NEW HAMPSHIRE -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#NH, #NH-btn').on('click', function () {
@@ -573,9 +526,7 @@ $(document).ready(function () {
         aTag2.innerText = "New Hampshire - White Mountain NF";
         aTag3.setAttribute('href', "https://www.fs.fed.us/ivm/");
         aTag3.innerText = "National Forest Map";
-
     });
-
 
     // NEW JERSEY -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#NJ, #NJ-btn').on('click', function () {
@@ -585,9 +536,7 @@ $(document).ready(function () {
         aTag2.innerText = "New Jersey State Parks";
         aTag3.setAttribute('href', "https://www.fs.fed.us/ivm/");
         aTag3.innerText = "National Forest Map";
-
     });
-
 
     // NEW MEXICO -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#NM').on('click', function () {
@@ -597,9 +546,7 @@ $(document).ready(function () {
         aTag2.innerText = "New Mexico Forest Service";
         aTag3.setAttribute('href', "");
         aTag3.innerText = "";
-
     });
-
 
     // NEW YORK -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#NY').on('click', function () {
@@ -609,10 +556,7 @@ $(document).ready(function () {
         aTag2.innerText = "New York - Green Mountain & Finger Lakes NF";
         aTag3.setAttribute('href', "https://parks.ny.gov/parks/");
         aTag3.innerText = "North York State Parks";
-
     });
-
-
 
     // NORTH CAROLINA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#NC').on('click', function () {
@@ -622,7 +566,6 @@ $(document).ready(function () {
         aTag2.innerText = "North Carolina National Forests";
         aTag3.setAttribute('href', "https://www.ncparks.gov/");
         aTag3.innerText = "North Carolina State Parks";
-
     });
 
     // NORTH DAKOTA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
@@ -633,9 +576,7 @@ $(document).ready(function () {
         aTag2.innerText = "North Dakota - Dakota Prairie Grasslands";
         aTag3.setAttribute('href', "https://www.parkrec.nd.gov/");
         aTag3.innerText = "North Dakota State Parks";
-
     });
-
 
     // OHIO -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#OH').on('click', function () {
@@ -645,9 +586,7 @@ $(document).ready(function () {
         aTag2.innerText = "Ohio - Wayne National Forest";
         aTag3.setAttribute('href', "http://parks.ohiodnr.gov/");
         aTag3.innerText = "Ohio State Parks";
-
     });
-
 
     // OKLAHOMA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#OK').on('click', function () {
@@ -657,10 +596,7 @@ $(document).ready(function () {
         aTag2.innerText = "Oklahoma - Ouachita National Forest";
         aTag3.setAttribute('href', "https://www.travelok.com/state-parks");
         aTag3.innerText = "Oklahoma State Parks";
-
     });
-
-
 
     // OREGON -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#OR').on('click', function () {
@@ -670,9 +606,7 @@ $(document).ready(function () {
         aTag2.innerText = "Oregon National Forests";
         aTag3.setAttribute('href', "https://oregonstateparks.org/");
         aTag3.innerText = "Oregon State Parks";
-
     });
-
 
     // PENNSYLVANIA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#PA').on('click', function () {
@@ -682,9 +616,7 @@ $(document).ready(function () {
         aTag2.innerText = "Pennsylvania - Alleghany National Forest";
         aTag3.setAttribute('href', "https://www.dcnr.pa.gov/StateForests/Pages/default.aspx");
         aTag3.innerText = "Pennsylvania State Forests";
-
     });
-
 
     // RHODE ISLAND -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
 
@@ -697,7 +629,6 @@ $(document).ready(function () {
         aTag.innerText = "Rhode Island BLM";
     });
 
-
     // SOUTH CAROLINA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#SC').on('click', function () {
         aTag.setAttribute('href', "https://www.blm.gov/about/what-we-manage/eastern-states");
@@ -706,11 +637,7 @@ $(document).ready(function () {
         aTag2.innerText = "South Carolina - Francis Marion & Sumter NF";
         aTag3.setAttribute('href', "https://southcarolinaparks.com/");
         aTag3.innerText = "South Carolina State Parks";
-
     });
-
-
-
 
     // SOUTH DAKOTA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#SD').on('click', function () {
@@ -720,12 +647,7 @@ $(document).ready(function () {
         aTag2.innerText = "South Dakota - Black Hills NF";
         aTag3.setAttribute('href', "https://gfp.sd.gov/parks/");
         aTag3.innerText = "South Dakota State Parks";
-
     });
-
-
-
-
 
     // TENNESSEE -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#TN').on('click', function () {
@@ -735,12 +657,7 @@ $(document).ready(function () {
         aTag2.innerText = "Tennessee - Cherokee National Forest";
         aTag3.setAttribute('href', "https://tnstateparks.com/");
         aTag3.innerText = "Tennessee State Parks";
-
     });
-
-
-
-
 
     // TEXAS -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#TX').on('click', function () {
@@ -750,12 +667,7 @@ $(document).ready(function () {
         aTag2.innerText = "Texas National Forests";
         aTag3.setAttribute('href', "https://tpwd.texas.gov/state-parks/");
         aTag3.innerText = "Texas State Parks";
-
     });
-
-
-
-
 
     // UTAH -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#UT').on('click', function () {
@@ -765,12 +677,7 @@ $(document).ready(function () {
         aTag2.innerText = "Utah Campgrounds";
         aTag3.setAttribute('href', "https://stateparks.utah.gov/");
         aTag3.innerText = "Utah State Parks";
-
     });
-
-
-
-
 
     // VERMONT -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#VT, #VT-btn').on('click', function () {
@@ -780,13 +687,7 @@ $(document).ready(function () {
         aTag2.innerText = "Vermont - Green Mountain & Finger Lakes NF";
         aTag3.setAttribute('href', "https://vtstateparks.com/");
         aTag3.innerText = "Vermont State Parks";
-
     });
-
-
-
-
-
 
     // VIRGINIA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#VA').on('click', function () {
@@ -796,12 +697,7 @@ $(document).ready(function () {
         aTag2.innerText = "Virginia - George Washington NF";
         aTag3.setAttribute('href', "https://www.dcr.virginia.gov/state-parks/");
         aTag3.innerText = "Virginia State Parks";
-
     });
-
-
-
-
 
     // WASHINGTON -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#WA').on('click', function () {
@@ -811,12 +707,7 @@ $(document).ready(function () {
         aTag2.innerText = "Washington National Forests";
         aTag3.setAttribute('href', "https://www.parks.wa.gov/");
         aTag3.innerText = "Washington State Parks";
-
     });
-
-
-
-
 
     // WEST VIRGINIA -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#WV').on('click', function () {
@@ -826,13 +717,7 @@ $(document).ready(function () {
         aTag2.innerText = "West Virginia - Monongahela NF";
         aTag3.setAttribute('href', "https://www.fs.usda.gov/gwj");
         aTag3.innerText = "West Virginia - George Washington NF";
-
     });
-
-
-
-
-
 
     // WISCONSIN -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#WI').on('click', function () {
@@ -842,11 +727,7 @@ $(document).ready(function () {
         aTag2.innerText = "Wisconsin - Chequamegon-Nicolet NF";
         aTag3.setAttribute('href', "https://dnr.wi.gov/topic/parks/");
         aTag3.innerText = "Wisconsin State Parks";
-
     });
-
-
-
 
     // WYOMING -- On Clicks That Add Links to Anchor Tag (link, link2, link3, wLink)
     $('#WY').on('click', function () {
@@ -856,43 +737,32 @@ $(document).ready(function () {
         aTag2.innerText = "Wyoming National Forests";
         aTag3.setAttribute('href', "https://wyoparks.wyo.gov/");
         aTag3.innerText = "Wyoming State Parks";
-
     });
 
+    //==================================================================
+    // Script for clickable map
+    //==================================================================
 
-
-
-
-});
-// ^^^ Links to Forest Service & BLM ^^^
-
-
-
-
-// Links to Forest Service and BLM appear when state is clicked
-
-
-
-// script for clickable map -- KI
-$("path, circle").hover(function (e) {
-    $('#info-box').css('display', 'block');
-    $('#info-box').html($(this).data('info'));
-});
-
-$("path, circle").mouseleave(function (e) {
-    //$('#info-box').css('display', 'none');
-});
-
-$(document).mousemove(function (e) {
-    // $('#info-box').css('top', e.pageY - $('#info-box').height() - 30);
-    // $('#info-box').css('left', e.pageX - ($('#info-box').width()) / 2);
-}).mouseover();
-
-var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-if (ios) {
-    $('a').on('click touchend', function () {
-        var link = $(this).attr('href');
-        window.open(link, '_blank');
-        return false;
+    $("path, circle").hover(function (e) {
+        $('#info-box').css('display', 'block');
+        $('#info-box').html($(this).data('info'));
     });
-}
+
+    $("path, circle").mouseleave(function (e) {
+        //$('#info-box').css('display', 'none');
+    });
+
+    $(document).mousemove(function (e) {
+        // $('#info-box').css('top', e.pageY - $('#info-box').height() - 30);
+        // $('#info-box').css('left', e.pageX - ($('#info-box').width()) / 2);
+    }).mouseover();
+
+    var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (ios) {
+        $('a').on('click touchend', function () {
+            var link = $(this).attr('href');
+            window.open(link, '_blank');
+            return false;
+        });
+    }
+});
