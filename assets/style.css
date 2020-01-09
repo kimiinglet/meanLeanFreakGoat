@@ -368,7 +368,7 @@ a {
     padding: 5px;
 }
 
-#names {
+.names {
     font-family: 'Raleway', sans-serif;
     color: rgb(30, 151, 121);
 }
