@@ -14,11 +14,10 @@ https://bulma.io/alternative-to-bootstrap/
 	3. =HERO!
 	4. =USA STATES BOX
     5. =LINKS BOX
-    6. =FUTURE DIV INFO BOX
-    7. =SEARCH BOX
-    8. =WEATHER BOX
-    9. =FOOTER
-    10. =MEDIA QUERIES
+    6. =SEARCH BOX
+    7. =WEATHER BOX
+    8. =FOOTER
+    9. =MEDIA QUERIES
 */
 
 /* COLORS
@@ -31,16 +30,11 @@ https://bulma.io/alternative-to-bootstrap/
 	font-family: 'Raleway', sans-serif;
 */
 
+/*=====================================///=======================================*/
+
 /* ==================
     =GLOBAL SETTINGS 
    ================== */
-
-body {
-    background: url("images/jf-brou-915UJQaxtrk-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .title {
     color: #F6F7F8;
@@ -55,6 +49,7 @@ body {
 
 .content {
     margin: 0 auto;
+    width: 100%;
 }
 
 .subtitle {
@@ -214,7 +209,7 @@ path:hover, circle:hover {
 .buttonGroup {
     position: absolute;
     right: 1%;
-    top: 40%;
+    top: 30%;
 }
 
 .tinyStatesBtn {
@@ -245,9 +240,6 @@ path:hover, circle:hover {
 .tile.is-2 {
     flex: auto !important;
 }
-/* ========================
-     =FUTURE DIV INFO BOX 
-   ======================== */
 
 /* =======================
         =SEARCH BOX 
@@ -268,6 +260,7 @@ path:hover, circle:hover {
 .label.is-medium {
     font-family: 'Raleway', sans-serif;
     color: #F6F7F8;
+    font-weight: 400;
 }
 
 #cityInput {
@@ -287,11 +280,17 @@ path:hover, circle:hover {
 
 .input {
     border-radius: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .field.is-grouped.is-grouped-right {
     padding-left: 15px;
 }
+
+.button {
+    font-family: 'Raleway', sans-serif;
+}
+
 /* ==================
       =WEATHER BOX 
    ================== */
@@ -312,7 +311,7 @@ h6 {
 
 /* Weather icons */
 i {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .weatherTemp {
@@ -336,26 +335,32 @@ i {
 
 #footerTxt {
     background-color: rgba(246, 247, 248, 0.616);
-    font-family: 'Montserrat', serif;
+    font-family: 'Raleway', sans-serif;
     color: #0f0e0d;
     display: inline-block;
     padding: 5px;
 }
 
 a {
-    font-family: 'Montserrat', serif;
+    font-family: 'Raleway', sans-serif;
     color: #F6F7F8;
     font-size: 1.2rem;
 }
 
 #names {
-    font-family: 'Montserrat', serif;
-    color: rgb(10, 104, 80);
+    font-family: 'Raleway', sans-serif;
+    color: rgb(30, 151, 121);
+}
+
+
+.tile.is-1 {
+    flex: auto !important;
 }
 
 /* =======================
         =MEDIA QUERIES 
    ======================= */
+
 
 @media screen and (max-width: 768px) {
     body {
