@@ -50,6 +50,27 @@ $(document).ready(function () {
     };
 
     //==================================================
+    // This script uses Moment.js to figure out month
+    // and changes background based on month
+    //==================================================
+
+    var momentMonth = moment().format("MMMM");
+
+    console.log(momentMonth);
+    if ((momentMonth === "December") || (momentMonth === "January") || (momentMonth === "February")) {
+        document.body.style.background = "url('assets/images/jf-brou-915UJQaxtrk-unsplash.jpg') no-repeat center cover";
+    }
+    else if ((momentMonth === "March") || (momentMonth === "April") || (momentMonth === "May")) {
+        document.body.style.background = "url('assets/images/jamie-street-wcO2PWLuQ3U-unsplash.jpg') no-repeat center cover";
+    }
+    else if ((momentMonth === "June") || (momentMonth === "July") || (momentMonth === "August")) {
+        document.body.style.background = "url('assets/images/jacob-van-blarcom-lkzjENdWgd8-unsplash.jpg') no-repeat center cover";
+    }
+    else if ((momentMonth === "September") || (momentMonth === "October") || (momentMonth === "November")) {
+        document.body.style.background = "url('assets/images/wilfried-santer-f5V0hJY2ohQ-unsplash.jpg') no-repeat center cover";
+    };
+
+    //==================================================
     // This function fades the hero on user scroll.
     //==================================================
 
