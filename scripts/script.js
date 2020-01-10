@@ -5,7 +5,7 @@
 //this key is for openweathermap's API.
 var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 
-//=======================================================================================
+//================================================================================================
 // When the website loads, (You can search by number and period)
 //      1. Welcome modal pops up.
 //      2. Moment.js pulls current date and appends to weather div.
@@ -16,7 +16,7 @@ var weatherKey = 'd9370cf81c44dc3900380fcc44da127d';
 //      7. Function will show "Invalid zipcode" modal if user info is missing.
 //      8. Add links to links box based on state.
 //      9. Function for clickable map.
-//=======================================================================================
+//================================================================================================
 
 $(document).ready(function () {
 
@@ -65,33 +65,32 @@ $(document).ready(function () {
 
     var momentMonth = moment().format("MMMM");
 
-    console.log(momentMonth);
     if ((momentMonth === "December") || (momentMonth === "January") || (momentMonth === "February")) {
         document.body.style.background = "url('assets/images/jf-brou-915UJQaxtrk-unsplash.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundPosition = "center center";
     }
 
     else if ((momentMonth === "March") || (momentMonth === "April") || (momentMonth === "May")) {
         document.body.style.background = "url('assets/images/jamie-street-wcO2PWLuQ3U-unsplash.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundPosition = "center center";
     }
 
     else if ((momentMonth === "June") || (momentMonth === "July") || (momentMonth === "August")) {
         document.body.style.background = "url('assets/images/ipet-photo-T-0EW-SEbsE-unsplash.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundPosition = "center center";
     }
 
     else if ((momentMonth === "September") || (momentMonth === "October") || (momentMonth === "November")) {
         document.body.style.background = "url('assets/images/wilfried-santer-f5V0hJY2ohQ-unsplash.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundPosition = "center center";
     };
 
     //=========================================================
