@@ -56,6 +56,10 @@ https://bulma.io/alternative-to-bootstrap/
     padding-left: 10%;
 }
 
+.button {
+    border-radius: 0px;
+}
+
 /* ===============
        =MODALS 
    =============== */
