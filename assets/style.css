@@ -214,14 +214,61 @@ path:hover, circle:hover {
     position: absolute;
     right: 1%;
     top: 30%;
-}
-
-.tinyStatesBtn {
-    margin: 5px;
+        margin: 5px;
     border: none;
 }
 
-.tinyStatesBtn:hover {
+
+#NH-btn:hover {
+    background-color: rgb(28, 209, 164);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#VT-btn:hover {
+    background-color: rgb(28, 209, 164);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#RI-btn:hover {
+    background-color: rgb(28, 209, 164);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#MA-btn:hover {
+    background-color: rgb(28, 209, 164);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#NJ-btn:hover {
+    background-color: rgb(28, 209, 164);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#CT-btn:hover {
+    background-color: rgb(28, 209, 164);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#MD-btn:hover {
+    background-color: rgb(28, 209, 164);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#DE-btn:hover {
     background-color: rgb(28, 209, 164);
     text-decoration: none;
     border: none;

@@ -8,7 +8,7 @@ var cSites = document.getElementById('cSites');
 //==================================================
 // Event listener for State Map path
 //==================================================
-$("path").on("click", function () {
+$(".NH, .VT, .RI, .MA, .NJ, .CT, .MD, .DE").on("click", function () {
     // console.log($(this).attr("id"));
 
     //==================================================
@@ -106,8 +106,8 @@ $("path").on("click", function () {
                     //===================================================
 
                     for (var i = 0; i < campGrounds.length; i++) {
-                        console.log(campGrounds[i].ATTRIBUTES);
-                        console.log("CHECK");
+                        // console.log(campGrounds[i].ATTRIBUTES);
+                        // console.log("CHECK");
 
 
                         //=============================================================================
