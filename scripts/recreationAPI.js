@@ -3,7 +3,8 @@
 //==================================================
 var cSites = document.getElementById('cSites');
 
-
+cSites.innerHTML = "Campsites...";
+cSites.href = "";
 
 //==================================================
 // Event listener for State Map path
