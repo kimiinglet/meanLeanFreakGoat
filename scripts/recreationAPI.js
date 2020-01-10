@@ -8,7 +8,7 @@ var cSites = document.getElementById('cSites');
 //==================================================
 // Event listener for State Map path
 //==================================================
-$("path").on("click", function () {
+$("path, .tinyStatesBtn").on("click", function () {
     // console.log($(this).attr("id"));
 
     //==================================================
