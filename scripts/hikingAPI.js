@@ -3,8 +3,20 @@
 //=========================================================
 
 var hikingProjectAPIKey = "200666312-c503ea08860b4acde9e1cf9816b96542";
-var hikingSites = document.getElementById('hikingSites');
-var hikingDescription = document.getElementById('hikingDescription');
+var hikingSites1 = document.getElementById('hikingSites1');
+var hikingDescription1 = document.getElementById('hikingDescription1');
+
+var hikingSites2 = document.getElementById('hikingSites2');
+var hikingDescription2 = document.getElementById('hikingDescription2');
+
+var hikingSites3 = document.getElementById('hikingSites3');
+var hikingDescription3 = document.getElementById('hikingDescription3');
+
+var hikingSites4 = document.getElementById('hikingSites4');
+var hikingDescription4 = document.getElementById('hikingDescription4');
+
+var hikingSites5 = document.getElementById('hikingSites5');
+var hikingDescription5 = document.getElementById('hikingDescription5');
 
 //==================================================
 //CORS for API
@@ -40,12 +52,31 @@ $(document).ready(function () {
             //Log the resulting object
             console.log(response);
 
-            var hikingSitesName = response.trails[0].name;
-            hikingSites.innerHTML = hikingSitesName;
-            hikingSites.href = response.trails[0].url;
+            //==================================================
+            // Add the names and urls for the first 5 trails
+            //==================================================
+            hikingSites1.innerHTML = response.trails[0].name;
+            hikingSites1.href = response.trails[0].url;
 
-            var hikingSitesSummary = response.trails[0].summary;
-            hikingDescription.innerHTML = hikingSitesSummary;
+            hikingSites2.innerHTML = response.trails[1].name;
+            hikingSites2.href = response.trails[1].url;
+
+            hikingSites3.innerHTML = response.trails[2].name;
+            hikingSites3.href = response.trails[2].url;
+
+            hikingSites4.innerHTML = response.trails[3].name;
+            hikingSites4.href = response.trails[3].url;
+
+            hikingSites5.innerHTML = response.trails[4].name;
+            hikingSites5.href = response.trails[4].url;
+            //======================================================================
+            // Add a description for each of these trails under the name and link
+            //======================================================================
+            hikingDescription1.innerHTML = response.trails[0].summary;
+            hikingDescription2.innerHTML = response.trails[1].summary;
+            hikingDescription3.innerHTML = response.trails[2].summary;
+            hikingDescription4.innerHTML = response.trails[3].summary;
+            hikingDescription5.innerHTML = response.trails[4].summary;
         });
     }
 

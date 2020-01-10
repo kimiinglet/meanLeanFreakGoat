@@ -309,15 +309,15 @@ a:hover {
     color: rgb(85, 201, 247);
 }
 
-#cSites:hover, #hikingSites:hover {
+#cSites:hover, #hikingLink:hover {
     color: rgb(152, 235, 104);
 }
 
-#hikingSites, #hikingDescription {
+#hikingLink, .descriptions {
     color: rgb(176, 104, 235);
 }
 
-#hikingDescription {
+.descriptions {
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
 }
