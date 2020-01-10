@@ -296,13 +296,30 @@ a:hover {
     flex: auto !important;
 }
 
-#randoCampTitle {
+#randoCampTitle, #hikingInfo {
     color: #F6F7F8;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-style: italic;
     word-break: keep-all;
     font-size: 1rem;
+}
+
+#cSites {
+    color: rgb(85, 201, 247);
+}
+
+#cSites:hover, #hikingSites:hover {
+    color: rgb(152, 235, 104);
+}
+
+#hikingSites, #hikingDescription {
+    color: rgb(176, 104, 235);
+}
+
+#hikingDescription {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* =======================
@@ -353,6 +370,7 @@ a:hover {
     padding-left: 15px;
     display:flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
     
 }
 

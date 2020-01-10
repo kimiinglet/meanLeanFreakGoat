@@ -10,12 +10,6 @@ These instructions will help you locate the perfect spot to spend time with your
 
 As dog owners, we wanted to find areas in the US where we can camp/hike with our dogs off-leash, so that we can spend quality time with our dogs and allow them to explore nature.
 
-## Wireframe
-
-Please forgive our rough sketch. 
-<br>
-<img src="assets/images/wireframe.jpg" width="50%" height="auto">
-
 ## How to use Wanderdog
 
 <img src="assets/images/Screenshot1.png" width="100%" height="auto">
@@ -41,16 +35,17 @@ Please keep in mind:
 * [FontAwesome](https://fontawesome.com/) - We used the dog icon.
 * [Google Fonts](https://fonts.google.com/) - We used 1 font style from Google Fonts.
 * [Moment](https://momentjs.com/) - We used Moment to grab current date and forecast dates.
+* [Hiking](https://www.hikingproject.com/data) - We used Hiking Project's API to grab trails based on geolocation.
 
 ## Contributing
 
-Thanks to Crystal Ly, Kimi Inglet, and Justin Wofford for creating this!
+Thanks to Kimi Inglet, Crystal Ly, and Justin Wofford for creating this!
 Thanks to Isreal Medina, Brittany Taylor, and Eric Scott for teaching and guiding us through this bootcamp!
 
 ## Authors
 
-* [Crystal Ly](https://github.com/cml2377)
 * [Kimi Inglet](https://github.com/kimiinglet)
+* [Crystal Ly](https://github.com/cml2377)
 * [Justin Wofford](https://github.com/JayDub21)
 
 ## License
