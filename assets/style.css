@@ -15,9 +15,10 @@ https://bulma.io/alternative-to-bootstrap/
 	4. =USA STATES BOX
     5. =LINKS BOX
     6. =SEARCH BOX
-    7. =WEATHER BOX
-    8. =FOOTER
-    9. =MEDIA QUERIES
+    7. =CAMP/HIKING BOX
+    8. =WEATHER BOX
+    9. =FOOTER
+    10. =MEDIA QUERIES
 */
 
 /* COLORS
@@ -53,7 +54,9 @@ https://bulma.io/alternative-to-bootstrap/
 }
 
 .subtitle {
-    padding-left: 10%;
+    padding: 2%;
+    color: #F6F7F8;
+    font-family: 'Raleway', sans-serif;
 }
 
 .button {
@@ -172,6 +175,10 @@ https://bulma.io/alternative-to-bootstrap/
     height: auto;
 }
 
+.clickable-states {
+    height: fit-content;
+}
+
 path:hover, circle:hover {
     stroke: rgb(28, 209, 164) !important;
     stroke-width:2px;
@@ -214,7 +221,7 @@ path:hover, circle:hover {
     position: absolute;
     right: 1%;
     top: 30%;
-        margin: 5px;
+    margin: 5px;
     border: none;
 }
 
@@ -280,7 +287,7 @@ path:hover, circle:hover {
    ================== */
 
 #infoBox {
-    padding-left: 10px;
+    padding: 5px;
     background-color: rgba(19, 19, 19, 0.795);
     color: #F6F7F8;
     font-size: 2rem;
@@ -296,6 +303,24 @@ a:hover {
     flex: auto !important;
 }
 
+#linksBox {
+    text-align: center;
+}
+
+
+/* =======================
+        =CAMP/HIKING BOX 
+   ======================= */
+
+#fullWidthHikingBox {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#hikingDiv {
+    background-color: rgba(19, 19, 19, 0.795);
+}
+
 #randoCampTitle, #hikingInfo {
     color: #F6F7F8;
     font-family: 'Raleway', sans-serif;
@@ -309,17 +334,22 @@ a:hover {
     color: rgb(85, 201, 247);
 }
 
-#cSites:hover, #hikingLink:hover {
+#cSites:hover, .hikingLink:hover {
     color: rgb(152, 235, 104);
 }
 
-#hikingLink, .descriptions {
+.hikingLink {
     color: rgb(176, 104, 235);
 }
 
 .descriptions {
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
+    color: #F6F7F8;
+}
+
+#hikingLinksDiv {
+    padding: 2%;
 }
 
 /* =======================
