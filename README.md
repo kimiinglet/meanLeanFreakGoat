@@ -11,11 +11,11 @@ These instructions will help you locate the perfect spot to spend time with your
 As dog owners, we wanted to find areas in the US where we can camp/hike with our dogs off-leash, so that we can spend quality time with our dogs and allow them to explore nature.
 
 ## How to use Wanderdog
-
-<img src="assets/images/Screenshot1.png" width="100%" height="auto">
 Clicking on a state will return results for locations near you.
 
 Input City OR Zip code for weather.
+<img src="assets/images/screencapture-kimiinglet-github-io-meanLeanFreakGoat-2020-01-11-11_59_59.png" width="100%" height="auto">
+
 
 ## How Wanderdog works
 We used Recreation's API to return campsites where dogs are allowed. We also searched for state parks and forests where you can visit with your dog off-leash. 
