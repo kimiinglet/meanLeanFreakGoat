@@ -15,7 +15,6 @@ As dog owners, we wanted to find areas in the US where we can camp/hike with our
 <img src="assets/images/Screenshot1.png" width="100%" height="auto">
 Clicking on a state will return results for locations near you.
 
-<img src="assets/images/Screenshot2.png" width="100%" height="auto">
 Input City OR Zip code for weather.
 
 ## How Wanderdog works
