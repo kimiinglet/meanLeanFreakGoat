@@ -225,7 +225,6 @@ path:hover, circle:hover {
     border: none;
 }
 
-
 #NH-btn:hover {
     background-color: rgb(28, 209, 164);
     text-decoration: none;
@@ -510,8 +509,8 @@ a {
     .buttonGroup {
         position: relative;
     }
-    .tinyStatesBtn {
-        display: inline-block !important;
+    #NH-btn, #VT-btn, #RI-btn, #MA-btn, #NJ-btn, #CT-btn, #MD-btn, #DE-btn {
+        display: inline-block;
     }
     li {
         text-align: left;
