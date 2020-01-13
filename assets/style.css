@@ -167,6 +167,13 @@ https://bulma.io/alternative-to-bootstrap/
 /* =======================
        =USA STATES BOX 
    ======================= */
+
+#googleMap {
+   width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
 #us-map{
     display: block;
     top: 0;
