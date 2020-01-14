@@ -102,6 +102,7 @@
                 <!--This tile is for the maps-->
                 <!------------------------------------------------------------------------------------------------>
                 <div class="tile is-parent is-8" id="mapsBox">
+                    <div id="googleMap"></div>
                     <div class="clickable-states">
                         <?xml version="1.0" encoding="utf-8"?>
                         <svg xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -506,6 +507,9 @@
     <!----------------------------------------------------------------------------------------------------------->
     <script type="text/javascript" src="scripts/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/googleMapAPI.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjORy8G0xS2QjrlQ7uJZWr1mabDPtAMCA&callback=initMap"></script>
     <script type="text/javascript" src="scripts/tinyBtnAPI.js" defer></script>
     <script type="text/javascript" src="scripts/recreationAPI.js" defer></script>
     <script type="text/javascript" src="scripts/script.js"></script>
